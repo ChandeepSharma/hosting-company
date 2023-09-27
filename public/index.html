@@ -13,11 +13,20 @@
 </head>
 <body class="bg-slate-100">
     <!-- header -->
-    <header class="w-full bg-slate-100 pt-11">
-        <nav class="bg-white px-10 py-2.5 flex items-center">
-            <div class="text-[#00000080] font-extrabold uppercase bg-slate-300 w-fit px-20 py-4 rounded-lg">logo</div>
-            <div class="w-fit ms-12">
-                <ul class="capitalize font-open-sans text-xs font-normal gap-x-6 flex items-center">
+    <header class="w-full pt-11">
+        <nav class="bg-white xl:px-10 px-5 py-2.5 flex items-center relative">
+            <button class="absolute sm:end-12 end-6 shadow-xl rounded-lg lg:hidden block">
+                <!-- svg -->
+                <svg width="50px" height="35px" viewBox="0 0 24 24" fill="blue" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 7L4 7" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M20 12L4 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M20 17L4 17" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <!--/ svg -->
+            </button>
+            <div class="text-[#00000080] font-extrabold uppercase bg-slate-300 w-fit sm:px-20 sm:py-4 px-10 py-2 rounded-lg me-auto lg:me-0">logo</div>
+            <div class="w-fit xl:ms-12 lg:ms-2 lg:block hidden">
+                <ul class="capitalize font-open-sans text-xs font-normal xl:gap-x-6 lg:gap-x-3 flex items-center">
                     <li><select name="" id="">
                         <option value="">Review</option>
                     </select></li>                    
@@ -41,14 +50,14 @@
                       </svg>Hosting Coupons</li>
                 </ul>
             </div>
-            <div class="flex items-center ms-auto">
+            <div class="items-center ms-auto lg:flex hidden">
                 <div class="w-fit relative flex items-center">
-                    <input class="w-72 text-xs bg-slate-100 rounded-full py-2 ps-5" type="search" name="" id="" placeholder="Search For a specific host"><svg class="absolute end-4" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                    <input class="xl:pe-28 lg:pe-10 text-xs bg-slate-100 rounded-full py-2 ps-5" type="search" name="" id="" placeholder="Search For a specific host"><svg class="absolute end-4" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
                         <path d="M10.7204 9.43396H10.0429L9.80274 9.2024C10.6432 8.2247 11.1492 6.9554 11.1492 5.57461C11.1492 2.49571 8.65352 0 5.57461 0C2.49571 0 0 2.49571 0 5.57461C0 8.65352 2.49571 11.1492 5.57461 11.1492C6.9554 11.1492 8.2247 10.6432 9.2024 9.80274L9.43396 10.0429V10.7204L13.7221 15L15 13.7221L10.7204 9.43396ZM5.57461 9.43396C3.43911 9.43396 1.71527 7.71012 1.71527 5.57461C1.71527 3.43911 3.43911 1.71527 5.57461 1.71527C7.71012 1.71527 9.43396 3.43911 9.43396 5.57461C9.43396 7.71012 7.71012 9.43396 5.57461 9.43396Z" fill="black" fill-opacity="0.6"/>
                       </svg>
                 </div>            
-                    <div class="ms-7">
-                        <select name="" id="" class="uppercase me-10 text-sm font-semibold">
+                    <div class="xl:ms-7 lg:ms-3">
+                        <select name="" id="" class="uppercase xl:me-10 lg:me-2 text-sm font-semibold">
                             <option value="">usd</option>
                         </select>
                         <select name="" id="" class="uppercase text-sm font-semibold">
@@ -58,6 +67,17 @@
             </div>           
         </nav>
     </header>
-    <!--/ header -->    
+    <!--/ header -->   
+    
+    <!-- banner -->
+    <section class="container mx-auto bg-primary grid lg:grid-cols-12 items-center text-center lg:text-start lg:px-17 px-2 py-3.5 rounded-lg">
+        <div class="lg:col-span-8 col-span-6">
+            <h1>Best Web Hosting Services of 2021</h1>
+        </div>
+        <div class="lg:col-span-4 col-span-6 mx-auto">
+            <img class="h-80 lg:ms-auto" src="../images/banner-svg.webp" alt="">
+        </div>
+    </section>
+    <!--/ banner -->
 </body>
 </html>
