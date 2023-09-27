@@ -1,0 +1,19 @@
+{
+  "name": "hosting-company",
+  "version": "1.0.0",
+  "description": "This is Hosting-company project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/tailwind.css -o ./public/tailwind.css --watch"
+  },
+  "keywords": [
+    "HTML",
+    "TAILWINDCSS",
+    "jQuery"
+  ],
+  "author": "Chandeep Sharma",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
