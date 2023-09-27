@@ -2,8 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-  h1{
-    @apply text-4.5xl text-white font-poppins;
-  }
-
+@layer base{
+    h1{
+        @apply text-4.5xl text-white font-poppins;
+    }
+}
