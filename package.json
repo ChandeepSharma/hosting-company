@@ -4,7 +4,7 @@
   "description": "This is Hosting-company project",
   "main": "index.js",
   "scripts": {
-    "dev": "tailwindcss -i ./src/tailwind.css -o ./public/tailwind.css --watch"
+    "dev": "tailwindcss -i ./src/css/tailwind.css -o ./public/tailwind.css --watch"
   },
   "keywords": [
     "HTML",
