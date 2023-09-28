@@ -7,3 +7,17 @@
         @apply text-4.5xl text-white font-poppins;
     }
 }
+@layer components{
+    .btn-primary{
+        @apply text-sm font-bold text-primary border-2 border-primary rounded-lg capitalize;
+    }
+    .btn-success{
+        @apply text-sm rounded-lg font-bold text-white bg-success capitalize;
+    }
+    .btn-outline-blue{
+       @apply border-blue-500 border-2 rounded-xl;
+    }
+    .card{
+        @apply col-span-4 text-center bg-white rounded-md px-3 py-8 font-poppins shadow-sm min-w-full;
+    }
+}

@@ -15,9 +15,10 @@
 
 <body class="bg-slate-100">
     <!-- header -->
-    <header class="w-full pt-11">
+    <header class="w-full lg:pt-11">
         <nav class="bg-white grid grid-cols-12 xl:px-10 px-5 relative items-center">
-            <button id="toggleBtn" class="absolute sm:end-12 end-6 shadow-xl rounded-lg lg:hidden block top-4">
+            <button type="button" id="toggleBtn"
+                class="absolute sm:end-12 end-6 shadow-xl rounded-lg lg:hidden block top-4">
                 <!-- svg -->
                 <svg width="50px" height="35px" viewBox="0 0 24 24" fill="blue" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20 7L4 7" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
@@ -26,25 +27,27 @@
                 </svg>
                 <!--/ svg -->
             </button>
-            <div
-                class="col-span-10 lg:col-span-2 text-slate-500 font-extrabold uppercase my-2.5 bg-slate-300 w-fit sm:px-20 sm:py-4 px-10 py-2 rounded-lg lg:me-0">
-                logo</div>
-            <div class="col-span-12 lg:col-span-6 w-fit lg:block lg:px-11 hidden">
-                <ul class="capitalize font-open-sans text-xs font-normal xl:gap-x-6 lg:gap-x-3 lg:flex items-center ps-4 lg:ps-0">
-                    <li class="border-b-2 lg:border-0"><select name="" id="">
+            <a href="#"
+                class="col-span-10 lg:col-span-2 text-slate-500 font-extrabold uppercase my-2.5 bg-slate-300 w-fit sm:px-20 sm:py-4 px-10 py-2 rounded-lg lg:me-0 shadow-md">
+                logo</a>
+            <div class="col-span-12 lg:col-span-6 hidden w-fit lg:block lg:px-11">
+                <ul
+                    class="capitalize font-open-sans text-xs font-normal xl:gap-x-6 lg:gap-x-3 lg:flex items-center ps-4 lg:ps-0 my-3 lg:my-0">
+                    <li class="border-b-2 lg:border-0"><select class="cursor-pointer" name="" id="">
                             <option value="">Review</option>
                         </select></li>
-                    <li class="my-3 border-b-2 lg:border-0"><select name="" id="">
+                    <li class="my-3 border-b-2 lg:border-0"><select class="cursor-pointer" name="" id="">
                             <option value="">Tools</option>
                         </select></li>
-                    <li class="border-b-2 lg:border-0"><select name="" id="">
+                    <li class="border-b-2 lg:border-0"><select class="cursor-pointer" name="" id="">
                             <option value="">Resources</option>
                         </select></li>
-                    <li class="my-3 border-b-2 lg:border-0"><select name="" id="">
+                    <li class="my-3 border-b-2 lg:border-0"><select class="cursor-pointer" name="" id="">
                             <option value="">Write Review</option>
                         </select></li>
-                    <li class="flex items-center border-b-2 lg:border-0 text-yellow-600"><svg class="me-1" xmlns="http://www.w3.org/2000/svg"
-                            width="11" height="15" viewBox="0 0 11 15" fill="none">
+                    <li class="flex items-center border-b-2 lg:border-0 text-yellow-600 cursor-pointer"><svg
+                            class="me-1" xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15"
+                            fill="none">
                             <path
                                 d="M5.02479 9.12493C4.12206 9.31079 3.5844 9.89491 3.5844 10.7246C3.5844 11.6141 4.32119 12.331 5.2372 12.331C6.59795 12.331 7.69982 11.2291 7.69982 9.86836C7.69982 9.15812 7.60025 8.46115 7.39448 7.79738C6.8701 8.50762 5.93417 8.93907 5.02479 9.12493ZM6.30588 0.834351C6.30588 0.834351 6.79708 2.59336 6.79708 4.02048C6.79708 5.38786 5.90098 6.49637 4.5336 6.49637C3.15958 6.49637 2.12409 5.38786 2.12409 4.02048L2.144 3.78152C0.803171 5.37459 0 7.43894 0 9.6825C0 12.6164 2.37632 14.9927 5.31022 14.9927C8.24411 14.9927 10.6204 12.6164 10.6204 9.6825C10.6204 6.10474 8.90125 2.91197 6.30588 0.834351ZM5.31022 13.6652C3.11312 13.6652 1.32755 11.8796 1.32755 9.6825C1.32755 8.66692 1.52669 7.66462 1.8984 6.74197C2.56882 7.41238 3.49811 7.82393 4.5336 7.82393C6.29925 7.82393 7.68654 6.60921 8.03834 4.88339C8.85479 6.3437 9.29288 7.98323 9.29288 9.6825C9.29288 11.8796 7.50732 13.6652 5.31022 13.6652Z"
                                 fill="url(#paint0_linear_59_447)" />
@@ -58,10 +61,10 @@
                         </svg>Hosting Coupons</li>
                 </ul>
             </div>
-            <div class="col-span-12 lg:col-span-4 items-center lg:ms-auto lg:flex pb-2 lg:pb-0 ps-4 lg:ps-0 hidden">
+            <div class="col-span-12 lg:col-span-4 hidden items-center lg:ms-auto lg:flex pb-2 lg:pb-0 ps-4 lg:ps-0 ">
                 <div class="w-fit relative flex items-center my-3 lg:my-0">
-                    <input class="xl:pe-28 lg:pe-10 text-xs bg-slate-100 rounded-full py-2 ps-5 pe-8" type="search" name=""
-                        id="" placeholder="Search For a specific host"><svg class="absolute end-4"
+                    <input class="xl:pe-24 lg:pe-10 text-xs bg-slate-100 rounded-full py-2 ps-5 pe-8 shadow-md"
+                        type="search" name="" id="" placeholder="Search For a specific host"><svg class="absolute end-4"
                         xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
                         <path
                             d="M10.7204 9.43396H10.0429L9.80274 9.2024C10.6432 8.2247 11.1492 6.9554 11.1492 5.57461C11.1492 2.49571 8.65352 0 5.57461 0C2.49571 0 0 2.49571 0 5.57461C0 8.65352 2.49571 11.1492 5.57461 11.1492C6.9554 11.1492 8.2247 10.6432 9.2024 9.80274L9.43396 10.0429V10.7204L13.7221 15L15 13.7221L10.7204 9.43396ZM5.57461 9.43396C3.43911 9.43396 1.71527 7.71012 1.71527 5.57461C1.71527 3.43911 3.43911 1.71527 5.57461 1.71527C7.71012 1.71527 9.43396 3.43911 9.43396 5.57461C9.43396 7.71012 7.71012 9.43396 5.57461 9.43396Z"
@@ -69,10 +72,10 @@
                     </svg>
                 </div>
                 <div class="xl:ms-6 lg:ms-3">
-                    <select name="" id="" class="uppercase xl:me-10 lg:me-2 text-sm font-semibold">
+                    <select name="" id="" class="uppercase xl:me-10 lg:me-2 text-sm font-semibold cursor-pointer">
                         <option value="">usd</option>
                     </select>
-                    <select name="" id="" class="uppercase text-sm font-semibold">
+                    <select name="" id="" class="uppercase text-sm font-semibold cursor-pointer">
                         <option value="">en</option>
                     </select>
                 </div>
@@ -84,8 +87,7 @@
     <!-- main -->
     <main class="container mx-auto">
         <!-- banner -->
-        <section
-            class="bg-primary grid grid-cols-12 items-center lg:px-17 px-2 py-3.5 rounded-lg">
+        <section class="bg-primary grid grid-cols-12 items-center lg:px-17 px-2 py-3.5 rounded-lg lg:my-16 my-8">
             <div class="lg:col-span-8 col-span-12 order-2 lg:order-1 text-center lg:text-start pt-5 lg:pt-0">
                 <h1>Best Web Hosting Services of 2021</h1>
                 <p class="text-xs text-white py-5">75,145 Authentic User reviews by paying customers on 4,634 Different
@@ -98,8 +100,745 @@
         <!--/ banner -->
 
         <!-- fastcomet cards -->
-        <section></section>
+        <section class="grid grid-cols-3 gap-x-10 xl:gap-x-32 2xl:gap-x-64 w-full lg:mb-16 mb-8">
+            <div class="card col-span-3 lg:col-span-1 ">
+                <h4 class="capitalize font-semibold text-xl">1 . FastComet</h4>
+                <div class="shadow-xl rounded-2xl w-fit mx-auto my-6">
+                    <!-- svg buttons -->
+                    <button type="button" class="btn-outline-blue px-4 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_59_135)">
+                                <path
+                                    d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+                                    fill="#2264D1" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_59_135">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <button type="button" class="px-4 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g opacity="0.6" clip-path="url(#clip0_59_128)">
+                                <path
+                                    d="M19 5H17V3H7V5H5C3.9 5 3 5.9 3 7V8C3 10.55 4.92 12.63 7.39 12.94C8.02 14.44 9.37 15.57 11 15.9V19H7V21H17V19H13V15.9C14.63 15.57 15.98 14.44 16.61 12.94C19.08 12.63 21 10.55 21 8V7C21 5.9 20.1 5 19 5ZM5 8V7H7V10.82C5.84 10.4 5 9.3 5 8ZM12 14C10.35 14 9 12.65 9 11V5H15V11C15 12.65 13.65 14 12 14ZM19 8C19 9.3 18.16 10.4 17 10.82V7H19V8Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_59_128">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <button type="button" class="px-4 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g opacity="0.6" clip-path="url(#clip0_59_131)">
+                                <path
+                                    d="M21.41 11.58L12.41 2.58C12.05 2.22 11.55 2 11 2H4C2.9 2 2 2.9 2 4V11C2 11.55 2.22 12.05 2.59 12.42L11.59 21.42C11.95 21.78 12.45 22 13 22C13.55 22 14.05 21.78 14.41 21.41L21.41 14.41C21.78 14.05 22 13.55 22 13C22 12.45 21.77 11.94 21.41 11.58ZM13 20.01L4 11V4H11V3.99L20 12.99L13 20.01Z"
+                                    fill="black" />
+                                <path
+                                    d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_59_131">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <!-- svg buttons -->
+                </div>
+                <img class="mx-auto" src="../images/fastcomet.png" alt="" width="49%">
+                <div>
+                    <div class="text-5xl my-4">9.6</div>
+                    <!-- svg star group -->
+                    <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="79" height="15" viewBox="0 0 79 15"
+                        fill="none">
+                        <path
+                            d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+                            fill="#FAB426" />
+                        <path
+                            d="M23.5 0L25.1839 5.18237H30.6329L26.2245 8.38525L27.9084 13.5676L23.5 10.3647L19.0916 13.5676L20.7755 8.38525L16.3671 5.18237H21.8161L23.5 0Z"
+                            fill="#FAB426" />
+                        <path
+                            d="M39.5 0L41.1839 5.18237H46.6329L42.2245 8.38525L43.9084 13.5676L39.5 10.3647L35.0916 13.5676L36.7755 8.38525L32.3671 5.18237H37.8161L39.5 0Z"
+                            fill="#FAB426" />
+                        <path
+                            d="M55.5 0L57.1839 5.18237H62.6329L58.2245 8.38525L59.9084 13.5676L55.5 10.3647L51.0916 13.5676L52.7755 8.38525L48.3671 5.18237H53.8161L55.5 0Z"
+                            fill="#FAB426" />
+                        <path
+                            d="M71.5 0L73.1839 5.18237H78.6329L74.2245 8.38525L75.9084 13.5676L71.5 10.3647L67.0916 13.5676L68.7755 8.38525L64.3671 5.18237H69.8161L71.5 0Z"
+                            fill="#FAB426" />
+                    </svg>
+                    <!--/ svg star group -->
+                    <div class="text-sm text-blue-400 my-1 font-normal mb-3">Reviews (1085)</div>
+                    <div class="text-sm my-1 font-normal opacity-85">Price Starting At <span
+                            class="text-warning text-2xl font-semibold my-3.5">$2.45</span> /MO</div>
+                    <div class="text-sm my-1 font-semibold opacity-85">Money Back in 45 Days</div>
+                    <button type="button" class="btn-success px-20 py-3 mt-5 w-72">Visit
+                        FastComet</button>
+                    <button type="button" class="btn-primary px-24 py-3 mt-5 w-72">Compare</button>
+                    <div class="mt-8 pb-2">
+                        <h6 class="font-bold mb-1 capitalize">Expert Overview</h6>
+                        <p><span class="font-semibold">Bruno Mirchevski:</span> FastComet has been making waves in the
+                            hosting industry since it established back in 2013. Owing to its variety of hosting options,
+                            flexible price points, and reliable customer service, it’s one of the most popular providers
+                            available in the US and around the world. <a class="text-blue-500 font-semibold"
+                                href="#">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-span-3 lg:col-span-1 my-5 lg:my-0">
+                <h4 class="capitalize font-semibold text-xl">2 . FastComet</h4>
+                <div class="shadow-xl rounded-2xl w-fit mx-auto my-6">
+                    <!-- svg buttons -->
+                    <button type="button" class="btn-outline-blue px-4 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_59_135)">
+                                <path
+                                    d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+                                    fill="#2264D1" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_59_135">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <button type="button" class="px-4 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g opacity="0.6" clip-path="url(#clip0_59_128)">
+                                <path
+                                    d="M19 5H17V3H7V5H5C3.9 5 3 5.9 3 7V8C3 10.55 4.92 12.63 7.39 12.94C8.02 14.44 9.37 15.57 11 15.9V19H7V21H17V19H13V15.9C14.63 15.57 15.98 14.44 16.61 12.94C19.08 12.63 21 10.55 21 8V7C21 5.9 20.1 5 19 5ZM5 8V7H7V10.82C5.84 10.4 5 9.3 5 8ZM12 14C10.35 14 9 12.65 9 11V5H15V11C15 12.65 13.65 14 12 14ZM19 8C19 9.3 18.16 10.4 17 10.82V7H19V8Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_59_128">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <button type="button" class="px-4 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g opacity="0.6" clip-path="url(#clip0_59_131)">
+                                <path
+                                    d="M21.41 11.58L12.41 2.58C12.05 2.22 11.55 2 11 2H4C2.9 2 2 2.9 2 4V11C2 11.55 2.22 12.05 2.59 12.42L11.59 21.42C11.95 21.78 12.45 22 13 22C13.55 22 14.05 21.78 14.41 21.41L21.41 14.41C21.78 14.05 22 13.55 22 13C22 12.45 21.77 11.94 21.41 11.58ZM13 20.01L4 11V4H11V3.99L20 12.99L13 20.01Z"
+                                    fill="black" />
+                                <path
+                                    d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_59_131">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <!-- svg buttons -->
+                </div>
+                <img class="mx-auto" src="../images/fastcomet.png" alt="" width="49%">
+                <div>
+                    <div class="text-5xl my-4">9.6</div>
+                    <!-- svg star group -->
+                    <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="79" height="15" viewBox="0 0 79 15"
+                        fill="none">
+                        <path
+                            d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+                            fill="#FAB426" />
+                        <path
+                            d="M23.5 0L25.1839 5.18237H30.6329L26.2245 8.38525L27.9084 13.5676L23.5 10.3647L19.0916 13.5676L20.7755 8.38525L16.3671 5.18237H21.8161L23.5 0Z"
+                            fill="#FAB426" />
+                        <path
+                            d="M39.5 0L41.1839 5.18237H46.6329L42.2245 8.38525L43.9084 13.5676L39.5 10.3647L35.0916 13.5676L36.7755 8.38525L32.3671 5.18237H37.8161L39.5 0Z"
+                            fill="#FAB426" />
+                        <path
+                            d="M55.5 0L57.1839 5.18237H62.6329L58.2245 8.38525L59.9084 13.5676L55.5 10.3647L51.0916 13.5676L52.7755 8.38525L48.3671 5.18237H53.8161L55.5 0Z"
+                            fill="#FAB426" />
+                        <path
+                            d="M71.5 0L73.1839 5.18237H78.6329L74.2245 8.38525L75.9084 13.5676L71.5 10.3647L67.0916 13.5676L68.7755 8.38525L64.3671 5.18237H69.8161L71.5 0Z"
+                            fill="#FAB426" />
+                    </svg>
+                    <!--/ svg star group -->
+                    <div class="text-sm text-blue-400 my-1 font-normal mb-3">Reviews (1085)</div>
+                    <div class="text-sm my-1 font-normal opacity-85">Price Starting At <span
+                            class="text-warning text-2xl font-semibold my-3.5">$2.45</span> /MO</div>
+                    <div class="text-sm my-1 font-semibold opacity-85">Money Back in 45 Days</div>
+                    <button type="button" class="btn-success px-20 py-3 mt-5 w-72">Visit
+                        FastComet</button>
+                    <button type="button" class="btn-primary px-24 py-3 mt-5 w-72">Compare</button>
+                    <div class="mt-8 pb-2">
+                        <h6 class="font-bold mb-1 capitalize">Expert Overview</h6>
+                        <p><span class="font-semibold">Bruno Mirchevski:</span> FastComet has been making waves in the
+                            hosting industry since it established back in 2013. Owing to its variety of hosting options,
+                            flexible price points, and reliable customer service, it’s one of the most popular providers
+                            available in the US and around the world. <a class="text-blue-500 font-semibold"
+                                href="#">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-span-3 lg:col-span-1">
+                <h4 class="capitalize font-semibold text-xl">3 . FastComet</h4>
+                <div class="shadow-xl rounded-2xl w-fit mx-auto my-6">
+                    <!-- svg buttons -->
+                    <button type="button" class="btn-outline-blue px-4 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_59_135)">
+                                <path
+                                    d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+                                    fill="#2264D1" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_59_135">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <button type="button" class="px-4 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g opacity="0.6" clip-path="url(#clip0_59_128)">
+                                <path
+                                    d="M19 5H17V3H7V5H5C3.9 5 3 5.9 3 7V8C3 10.55 4.92 12.63 7.39 12.94C8.02 14.44 9.37 15.57 11 15.9V19H7V21H17V19H13V15.9C14.63 15.57 15.98 14.44 16.61 12.94C19.08 12.63 21 10.55 21 8V7C21 5.9 20.1 5 19 5ZM5 8V7H7V10.82C5.84 10.4 5 9.3 5 8ZM12 14C10.35 14 9 12.65 9 11V5H15V11C15 12.65 13.65 14 12 14ZM19 8C19 9.3 18.16 10.4 17 10.82V7H19V8Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_59_128">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <button type="button" class="px-4 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g opacity="0.6" clip-path="url(#clip0_59_131)">
+                                <path
+                                    d="M21.41 11.58L12.41 2.58C12.05 2.22 11.55 2 11 2H4C2.9 2 2 2.9 2 4V11C2 11.55 2.22 12.05 2.59 12.42L11.59 21.42C11.95 21.78 12.45 22 13 22C13.55 22 14.05 21.78 14.41 21.41L21.41 14.41C21.78 14.05 22 13.55 22 13C22 12.45 21.77 11.94 21.41 11.58ZM13 20.01L4 11V4H11V3.99L20 12.99L13 20.01Z"
+                                    fill="black" />
+                                <path
+                                    d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_59_131">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <!-- svg buttons -->
+                </div>
+                <img class="mx-auto" src="../images/fastcomet.png" alt="" width="49%">
+                <div>
+                    <div class="text-5xl my-4">9.6</div>
+                    <!-- svg star group -->
+                    <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="79" height="15" viewBox="0 0 79 15"
+                        fill="none">
+                        <path
+                            d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+                            fill="#FAB426" />
+                        <path
+                            d="M23.5 0L25.1839 5.18237H30.6329L26.2245 8.38525L27.9084 13.5676L23.5 10.3647L19.0916 13.5676L20.7755 8.38525L16.3671 5.18237H21.8161L23.5 0Z"
+                            fill="#FAB426" />
+                        <path
+                            d="M39.5 0L41.1839 5.18237H46.6329L42.2245 8.38525L43.9084 13.5676L39.5 10.3647L35.0916 13.5676L36.7755 8.38525L32.3671 5.18237H37.8161L39.5 0Z"
+                            fill="#FAB426" />
+                        <path
+                            d="M55.5 0L57.1839 5.18237H62.6329L58.2245 8.38525L59.9084 13.5676L55.5 10.3647L51.0916 13.5676L52.7755 8.38525L48.3671 5.18237H53.8161L55.5 0Z"
+                            fill="#FAB426" />
+                        <path
+                            d="M71.5 0L73.1839 5.18237H78.6329L74.2245 8.38525L75.9084 13.5676L71.5 10.3647L67.0916 13.5676L68.7755 8.38525L64.3671 5.18237H69.8161L71.5 0Z"
+                            fill="#FAB426" />
+                    </svg>
+                    <!--/ svg star group -->
+                    <div class="text-sm text-blue-400 my-1 font-normal mb-3">Reviews (1085)</div>
+                    <div class="text-sm my-1 font-normal opacity-85">Price Starting At <span
+                            class="text-warning text-2xl font-semibold my-3.5">$2.45</span> /MO</div>
+                    <div class="text-sm my-1 font-semibold opacity-85">Money Back in 45 Days</div>
+                    <button type="button" class="btn-success px-20 py-3 mt-5 w-72">Visit
+                        FastComet</button>
+                    <button type="button" class="btn-primary px-24 py-3 mt-5 w-72">Compare</button>
+                    <div class="mt-8 pb-2">
+                        <h6 class="font-bold mb-1 capitalize">Expert Overview</h6>
+                        <p><span class="font-semibold">Bruno Mirchevski:</span> FastComet has been making waves in the
+                            hosting industry since it established back in 2013. Owing to its variety of hosting options,
+                            flexible price points, and reliable customer service, it’s one of the most popular providers
+                            available in the US and around the world. <a class="text-blue-500 font-semibold"
+                                href="#">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--/ fastcomet cards -->
+
+        <!-- ranking -->
+        <section class="grid grid-cols-2 lg:gap-x-8 lg:gap-y-16 gap-y-8 pb-8 lg:pb-16">
+            <h1 class="col-span-2 capitalize text-center bg-primary py-7 rounded-lg">Other Options By
+                Ranking</h1>
+            <div class="card col-span-2 lg:col-span-1">
+                <h4 class="capitalize font-semibold text-xl">4 . Hostinger</h4>
+                <div class="shadow-xl rounded-2xl w-fit mx-auto my-6">
+                    <!-- svg buttons -->
+                    <button type="button" class="btn-outline-blue px-4 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_59_135)">
+                                <path
+                                    d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+                                    fill="#2264D1" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_59_135">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <button type="button" class="px-4 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g opacity="0.6" clip-path="url(#clip0_59_128)">
+                                <path
+                                    d="M19 5H17V3H7V5H5C3.9 5 3 5.9 3 7V8C3 10.55 4.92 12.63 7.39 12.94C8.02 14.44 9.37 15.57 11 15.9V19H7V21H17V19H13V15.9C14.63 15.57 15.98 14.44 16.61 12.94C19.08 12.63 21 10.55 21 8V7C21 5.9 20.1 5 19 5ZM5 8V7H7V10.82C5.84 10.4 5 9.3 5 8ZM12 14C10.35 14 9 12.65 9 11V5H15V11C15 12.65 13.65 14 12 14ZM19 8C19 9.3 18.16 10.4 17 10.82V7H19V8Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_59_128">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <button type="button" class="px-4 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g opacity="0.6" clip-path="url(#clip0_59_131)">
+                                <path
+                                    d="M21.41 11.58L12.41 2.58C12.05 2.22 11.55 2 11 2H4C2.9 2 2 2.9 2 4V11C2 11.55 2.22 12.05 2.59 12.42L11.59 21.42C11.95 21.78 12.45 22 13 22C13.55 22 14.05 21.78 14.41 21.41L21.41 14.41C21.78 14.05 22 13.55 22 13C22 12.45 21.77 11.94 21.41 11.58ZM13 20.01L4 11V4H11V3.99L20 12.99L13 20.01Z"
+                                    fill="black" />
+                                <path
+                                    d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_59_131">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <!-- svg buttons -->
+                </div>
+                <img class="mx-auto" src="../images/holister.png" alt="" width="49%">
+                <div class="grid grid-cols-10">
+                    <div class="col-span-4">
+                        <div class="text-5xl mb-4">9.6</div>
+                        <!-- svg star group -->
+                        <svg class="mx-auto mb-2" xmlns="http://www.w3.org/2000/svg" width="79" height="15"
+                            viewBox="0 0 79 15" fill="none">
+                            <path
+                                d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+                                fill="#FAB426" />
+                            <path
+                                d="M23.5 0L25.1839 5.18237H30.6329L26.2245 8.38525L27.9084 13.5676L23.5 10.3647L19.0916 13.5676L20.7755 8.38525L16.3671 5.18237H21.8161L23.5 0Z"
+                                fill="#FAB426" />
+                            <path
+                                d="M39.5 0L41.1839 5.18237H46.6329L42.2245 8.38525L43.9084 13.5676L39.5 10.3647L35.0916 13.5676L36.7755 8.38525L32.3671 5.18237H37.8161L39.5 0Z"
+                                fill="#FAB426" />
+                            <path
+                                d="M55.5 0L57.1839 5.18237H62.6329L58.2245 8.38525L59.9084 13.5676L55.5 10.3647L51.0916 13.5676L52.7755 8.38525L48.3671 5.18237H53.8161L55.5 0Z"
+                                fill="#FAB426" />
+                            <path
+                                d="M71.5 0L73.1839 5.18237H78.6329L74.2245 8.38525L75.9084 13.5676L71.5 10.3647L67.0916 13.5676L68.7755 8.38525L64.3671 5.18237H69.8161L71.5 0Z"
+                                fill="#FAB426" />
+                        </svg>
+                        <!--/ svg star group -->
+                        <div class="text-sm text-blue-400 my-1 font-normal mb-3">Reviews (1085)</div>
+                        <!-- svg like dislike -->
+                        <div class="flex items-center mx-auto w-fit my-6">
+                            <div class="flex items-center me-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                    <path d="M8 20H17C17.83 20 18.54 19.5 18.84 18.78L21.86 11.73C21.95 11.5 22 11.26 22 11V9C22 7.9 21.1 7 20 7H13.69L14.64 2.43L14.67 2.11C14.67 1.7 14.5 1.32 14.23 1.05L13.17 0L6.58 6.59C6.22 6.95 6 7.45 6 8V18C6 19.1 6.9 20 8 20ZM8 8L12.34 3.66L11 9H20V11L17 18H8V8ZM0 8H4V20H0V8Z" fill="#2FCD82"/>
+                                  </svg><span class="text-xs text-red-700 ms-1">896</span>
+                            </div>
+                              <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_59_277)">
+                                      <path d="M15 3H6C5.17 3 4.46 3.5 4.16 4.22L1.14 11.27C1.05 11.5 1 11.74 1 12V14C1 15.1 1.9 16 3 16H9.31L8.36 20.57L8.33 20.89C8.33 21.3 8.5 21.68 8.77 21.95L9.83 23L16.42 16.41C16.78 16.05 17 15.55 17 15V5C17 3.9 16.1 3 15 3ZM15 15L10.66 19.34L12 14H3V12L6 5H15V15ZM23 15H19V3H23V15Z" fill="#FF1111" fill-opacity="0.78"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_59_277">
+                                        <rect width="24" height="24" fill="white" transform="matrix(-1 0 0 -1 24 24)"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg><span class="text-xs text-red-700 ms-1">7</span>
+                              </div>
+                        </div>
+                        <!--/ svg like dislike -->
+                        <div class="text-sm my-1 font-normal opacity-85">Price Starting At <span
+                                class="text-warning text-2xl font-semibold my-3.5">$2.45</span> /MO</div>
+                        <div class="text-sm my-1 font-semibold opacity-85">Money Back in 45 Days</div>
+                    </div>
+                    <div class="col-span-6 px-2 min-w-full">
+                        <h6 class="font-bold mb-1 capitalize">Expert Overview</h6>
+                        <p><span class="font-semibold">Bruno Mirchevski:</span> FastComet has been making waves in the
+                            hosting industry since it established back in 2013. Owing to its variety of hosting options,
+                            flexible price points, and reliable customer service, it’s one of the most popular providers
+                            available in the US and around the world. <a class="text-blue-500 font-semibold"
+                                href="#">Read More</a></p>
+                        <button type="button" class="btn-success px-20 py-3 mt-5 w-72">Visit
+                            FastComet</button>
+                        <button type="button" class="btn-primary px-24 py-3 mt-5 w-72">Compare</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-span-2 lg:col-span-1">
+                <h4 class="capitalize font-semibold text-xl">5 . Hostinger</h4>
+                <div class="shadow-xl rounded-2xl w-fit mx-auto my-6">
+                    <!-- svg buttons -->
+                    <button type="button" class="btn-outline-blue px-4 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_59_135)">
+                                <path
+                                    d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+                                    fill="#2264D1" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_59_135">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <button type="button" class="px-4 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g opacity="0.6" clip-path="url(#clip0_59_128)">
+                                <path
+                                    d="M19 5H17V3H7V5H5C3.9 5 3 5.9 3 7V8C3 10.55 4.92 12.63 7.39 12.94C8.02 14.44 9.37 15.57 11 15.9V19H7V21H17V19H13V15.9C14.63 15.57 15.98 14.44 16.61 12.94C19.08 12.63 21 10.55 21 8V7C21 5.9 20.1 5 19 5ZM5 8V7H7V10.82C5.84 10.4 5 9.3 5 8ZM12 14C10.35 14 9 12.65 9 11V5H15V11C15 12.65 13.65 14 12 14ZM19 8C19 9.3 18.16 10.4 17 10.82V7H19V8Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_59_128">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <button type="button" class="px-4 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g opacity="0.6" clip-path="url(#clip0_59_131)">
+                                <path
+                                    d="M21.41 11.58L12.41 2.58C12.05 2.22 11.55 2 11 2H4C2.9 2 2 2.9 2 4V11C2 11.55 2.22 12.05 2.59 12.42L11.59 21.42C11.95 21.78 12.45 22 13 22C13.55 22 14.05 21.78 14.41 21.41L21.41 14.41C21.78 14.05 22 13.55 22 13C22 12.45 21.77 11.94 21.41 11.58ZM13 20.01L4 11V4H11V3.99L20 12.99L13 20.01Z"
+                                    fill="black" />
+                                <path
+                                    d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_59_131">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <!-- svg buttons -->
+                </div>
+                <img class="mx-auto" src="../images/holister.png" alt="" width="49%">
+                <div class="grid grid-cols-10">
+                    <div class="col-span-4">
+                        <div class="text-5xl mb-4">9.6</div>
+                        <!-- svg star group -->
+                        <svg class="mx-auto mb-2" xmlns="http://www.w3.org/2000/svg" width="79" height="15"
+                            viewBox="0 0 79 15" fill="none">
+                            <path
+                                d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+                                fill="#FAB426" />
+                            <path
+                                d="M23.5 0L25.1839 5.18237H30.6329L26.2245 8.38525L27.9084 13.5676L23.5 10.3647L19.0916 13.5676L20.7755 8.38525L16.3671 5.18237H21.8161L23.5 0Z"
+                                fill="#FAB426" />
+                            <path
+                                d="M39.5 0L41.1839 5.18237H46.6329L42.2245 8.38525L43.9084 13.5676L39.5 10.3647L35.0916 13.5676L36.7755 8.38525L32.3671 5.18237H37.8161L39.5 0Z"
+                                fill="#FAB426" />
+                            <path
+                                d="M55.5 0L57.1839 5.18237H62.6329L58.2245 8.38525L59.9084 13.5676L55.5 10.3647L51.0916 13.5676L52.7755 8.38525L48.3671 5.18237H53.8161L55.5 0Z"
+                                fill="#FAB426" />
+                            <path
+                                d="M71.5 0L73.1839 5.18237H78.6329L74.2245 8.38525L75.9084 13.5676L71.5 10.3647L67.0916 13.5676L68.7755 8.38525L64.3671 5.18237H69.8161L71.5 0Z"
+                                fill="#FAB426" />
+                        </svg>
+                        <!--/ svg star group -->
+                        <div class="text-sm text-blue-400 my-1 font-normal mb-3">Reviews (1085)</div>
+                        <!-- svg like dislike -->
+                        <div class="flex items-center mx-auto w-fit my-6">
+                            <div class="flex items-center me-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                    <path d="M8 20H17C17.83 20 18.54 19.5 18.84 18.78L21.86 11.73C21.95 11.5 22 11.26 22 11V9C22 7.9 21.1 7 20 7H13.69L14.64 2.43L14.67 2.11C14.67 1.7 14.5 1.32 14.23 1.05L13.17 0L6.58 6.59C6.22 6.95 6 7.45 6 8V18C6 19.1 6.9 20 8 20ZM8 8L12.34 3.66L11 9H20V11L17 18H8V8ZM0 8H4V20H0V8Z" fill="#2FCD82"/>
+                                  </svg><span class="text-xs text-red-700 ms-1">896</span>
+                            </div>
+                              <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_59_277)">
+                                      <path d="M15 3H6C5.17 3 4.46 3.5 4.16 4.22L1.14 11.27C1.05 11.5 1 11.74 1 12V14C1 15.1 1.9 16 3 16H9.31L8.36 20.57L8.33 20.89C8.33 21.3 8.5 21.68 8.77 21.95L9.83 23L16.42 16.41C16.78 16.05 17 15.55 17 15V5C17 3.9 16.1 3 15 3ZM15 15L10.66 19.34L12 14H3V12L6 5H15V15ZM23 15H19V3H23V15Z" fill="#FF1111" fill-opacity="0.78"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_59_277">
+                                        <rect width="24" height="24" fill="white" transform="matrix(-1 0 0 -1 24 24)"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg><span class="text-xs text-red-700 ms-1">7</span>
+                              </div>
+                        </div>
+                        <!--/ svg like dislike -->
+                        <div class="text-sm my-1 font-normal opacity-85">Price Starting At <span
+                                class="text-warning text-2xl font-semibold my-3.5">$2.45</span> /MO</div>
+                        <div class="text-sm my-1 font-semibold opacity-85">Money Back in 45 Days</div>
+                    </div>
+                    <div class="col-span-6 px-2 min-w-full">
+                        <h6 class="font-bold mb-1 capitalize">Expert Overview</h6>
+                        <p><span class="font-semibold">Bruno Mirchevski:</span> FastComet has been making waves in the
+                            hosting industry since it established back in 2013. Owing to its variety of hosting options,
+                            flexible price points, and reliable customer service, it’s one of the most popular providers
+                            available in the US and around the world. <a class="text-blue-500 font-semibold"
+                                href="#">Read More</a></p>
+                        <button type="button" class="btn-success px-20 py-3 mt-5 w-72">Visit
+                            FastComet</button>
+                        <button type="button" class="btn-primary px-24 py-3 mt-5 w-72">Compare</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-span-2 lg:col-span-1">
+                <h4 class="capitalize font-semibold text-xl">6 . Hostinger</h4>
+                <div class="shadow-xl rounded-2xl w-fit mx-auto my-6">
+                    <!-- svg buttons -->
+                    <button type="button" class="btn-outline-blue px-4 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_59_135)">
+                                <path
+                                    d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+                                    fill="#2264D1" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_59_135">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <button type="button" class="px-4 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g opacity="0.6" clip-path="url(#clip0_59_128)">
+                                <path
+                                    d="M19 5H17V3H7V5H5C3.9 5 3 5.9 3 7V8C3 10.55 4.92 12.63 7.39 12.94C8.02 14.44 9.37 15.57 11 15.9V19H7V21H17V19H13V15.9C14.63 15.57 15.98 14.44 16.61 12.94C19.08 12.63 21 10.55 21 8V7C21 5.9 20.1 5 19 5ZM5 8V7H7V10.82C5.84 10.4 5 9.3 5 8ZM12 14C10.35 14 9 12.65 9 11V5H15V11C15 12.65 13.65 14 12 14ZM19 8C19 9.3 18.16 10.4 17 10.82V7H19V8Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_59_128">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <button type="button" class="px-4 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g opacity="0.6" clip-path="url(#clip0_59_131)">
+                                <path
+                                    d="M21.41 11.58L12.41 2.58C12.05 2.22 11.55 2 11 2H4C2.9 2 2 2.9 2 4V11C2 11.55 2.22 12.05 2.59 12.42L11.59 21.42C11.95 21.78 12.45 22 13 22C13.55 22 14.05 21.78 14.41 21.41L21.41 14.41C21.78 14.05 22 13.55 22 13C22 12.45 21.77 11.94 21.41 11.58ZM13 20.01L4 11V4H11V3.99L20 12.99L13 20.01Z"
+                                    fill="black" />
+                                <path
+                                    d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_59_131">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <!-- svg buttons -->
+                </div>
+                <img class="mx-auto" src="../images/holister.png" alt="" width="49%">
+                <div class="grid grid-cols-10">
+                    <div class="col-span-4">
+                        <div class="text-5xl mb-4">9.6</div>
+                        <!-- svg star group -->
+                        <svg class="mx-auto mb-2" xmlns="http://www.w3.org/2000/svg" width="79" height="15"
+                            viewBox="0 0 79 15" fill="none">
+                            <path
+                                d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+                                fill="#FAB426" />
+                            <path
+                                d="M23.5 0L25.1839 5.18237H30.6329L26.2245 8.38525L27.9084 13.5676L23.5 10.3647L19.0916 13.5676L20.7755 8.38525L16.3671 5.18237H21.8161L23.5 0Z"
+                                fill="#FAB426" />
+                            <path
+                                d="M39.5 0L41.1839 5.18237H46.6329L42.2245 8.38525L43.9084 13.5676L39.5 10.3647L35.0916 13.5676L36.7755 8.38525L32.3671 5.18237H37.8161L39.5 0Z"
+                                fill="#FAB426" />
+                            <path
+                                d="M55.5 0L57.1839 5.18237H62.6329L58.2245 8.38525L59.9084 13.5676L55.5 10.3647L51.0916 13.5676L52.7755 8.38525L48.3671 5.18237H53.8161L55.5 0Z"
+                                fill="#FAB426" />
+                            <path
+                                d="M71.5 0L73.1839 5.18237H78.6329L74.2245 8.38525L75.9084 13.5676L71.5 10.3647L67.0916 13.5676L68.7755 8.38525L64.3671 5.18237H69.8161L71.5 0Z"
+                                fill="#FAB426" />
+                        </svg>
+                        <!--/ svg star group -->
+                        <div class="text-sm text-blue-400 my-1 font-normal mb-3">Reviews (1085)</div>
+                        <!-- svg like dislike -->
+                        <div class="flex items-center mx-auto w-fit my-6">
+                            <div class="flex items-center me-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                    <path d="M8 20H17C17.83 20 18.54 19.5 18.84 18.78L21.86 11.73C21.95 11.5 22 11.26 22 11V9C22 7.9 21.1 7 20 7H13.69L14.64 2.43L14.67 2.11C14.67 1.7 14.5 1.32 14.23 1.05L13.17 0L6.58 6.59C6.22 6.95 6 7.45 6 8V18C6 19.1 6.9 20 8 20ZM8 8L12.34 3.66L11 9H20V11L17 18H8V8ZM0 8H4V20H0V8Z" fill="#2FCD82"/>
+                                  </svg><span class="text-xs text-red-700 ms-1">896</span>
+                            </div>
+                              <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_59_277)">
+                                      <path d="M15 3H6C5.17 3 4.46 3.5 4.16 4.22L1.14 11.27C1.05 11.5 1 11.74 1 12V14C1 15.1 1.9 16 3 16H9.31L8.36 20.57L8.33 20.89C8.33 21.3 8.5 21.68 8.77 21.95L9.83 23L16.42 16.41C16.78 16.05 17 15.55 17 15V5C17 3.9 16.1 3 15 3ZM15 15L10.66 19.34L12 14H3V12L6 5H15V15ZM23 15H19V3H23V15Z" fill="#FF1111" fill-opacity="0.78"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_59_277">
+                                        <rect width="24" height="24" fill="white" transform="matrix(-1 0 0 -1 24 24)"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg><span class="text-xs text-red-700 ms-1">7</span>
+                              </div>
+                        </div>
+                        <!--/ svg like dislike -->
+                        <div class="text-sm my-1 font-normal opacity-85">Price Starting At <span
+                                class="text-warning text-2xl font-semibold my-3.5">$2.45</span> /MO</div>
+                        <div class="text-sm my-1 font-semibold opacity-85">Money Back in 45 Days</div>
+                    </div>
+                    <div class="col-span-6 px-2 min-w-full">
+                        <h6 class="font-bold mb-1 capitalize">Expert Overview</h6>
+                        <p><span class="font-semibold">Bruno Mirchevski:</span> FastComet has been making waves in the
+                            hosting industry since it established back in 2013. Owing to its variety of hosting options,
+                            flexible price points, and reliable customer service, it’s one of the most popular providers
+                            available in the US and around the world. <a class="text-blue-500 font-semibold"
+                                href="#">Read More</a></p>
+                        <button type="button" class="btn-success px-20 py-3 mt-5 w-72">Visit
+                            FastComet</button>
+                        <button type="button" class="btn-primary px-24 py-3 mt-5 w-72">Compare</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-span-2 lg:col-span-1">
+                <h4 class="capitalize font-semibold text-xl">7 . Hostinger</h4>
+                <div class="shadow-xl rounded-2xl w-fit mx-auto my-6">
+                    <!-- svg buttons -->
+                    <button type="button" class="btn-outline-blue px-4 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_59_135)">
+                                <path
+                                    d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+                                    fill="#2264D1" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_59_135">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <button type="button" class="px-4 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g opacity="0.6" clip-path="url(#clip0_59_128)">
+                                <path
+                                    d="M19 5H17V3H7V5H5C3.9 5 3 5.9 3 7V8C3 10.55 4.92 12.63 7.39 12.94C8.02 14.44 9.37 15.57 11 15.9V19H7V21H17V19H13V15.9C14.63 15.57 15.98 14.44 16.61 12.94C19.08 12.63 21 10.55 21 8V7C21 5.9 20.1 5 19 5ZM5 8V7H7V10.82C5.84 10.4 5 9.3 5 8ZM12 14C10.35 14 9 12.65 9 11V5H15V11C15 12.65 13.65 14 12 14ZM19 8C19 9.3 18.16 10.4 17 10.82V7H19V8Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_59_128">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <button type="button" class="px-4 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g opacity="0.6" clip-path="url(#clip0_59_131)">
+                                <path
+                                    d="M21.41 11.58L12.41 2.58C12.05 2.22 11.55 2 11 2H4C2.9 2 2 2.9 2 4V11C2 11.55 2.22 12.05 2.59 12.42L11.59 21.42C11.95 21.78 12.45 22 13 22C13.55 22 14.05 21.78 14.41 21.41L21.41 14.41C21.78 14.05 22 13.55 22 13C22 12.45 21.77 11.94 21.41 11.58ZM13 20.01L4 11V4H11V3.99L20 12.99L13 20.01Z"
+                                    fill="black" />
+                                <path
+                                    d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_59_131">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <!-- svg buttons -->
+                </div>
+                <img class="mx-auto" src="../images/holister.png" alt="" width="49%">
+                <div class="grid grid-cols-10">
+                    <div class="col-span-4">
+                        <div class="text-5xl mb-4">9.6</div>
+                        <!-- svg star group -->
+                        <svg class="mx-auto mb-2" xmlns="http://www.w3.org/2000/svg" width="79" height="15"
+                            viewBox="0 0 79 15" fill="none">
+                            <path
+                                d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z"
+                                fill="#FAB426" />
+                            <path
+                                d="M23.5 0L25.1839 5.18237H30.6329L26.2245 8.38525L27.9084 13.5676L23.5 10.3647L19.0916 13.5676L20.7755 8.38525L16.3671 5.18237H21.8161L23.5 0Z"
+                                fill="#FAB426" />
+                            <path
+                                d="M39.5 0L41.1839 5.18237H46.6329L42.2245 8.38525L43.9084 13.5676L39.5 10.3647L35.0916 13.5676L36.7755 8.38525L32.3671 5.18237H37.8161L39.5 0Z"
+                                fill="#FAB426" />
+                            <path
+                                d="M55.5 0L57.1839 5.18237H62.6329L58.2245 8.38525L59.9084 13.5676L55.5 10.3647L51.0916 13.5676L52.7755 8.38525L48.3671 5.18237H53.8161L55.5 0Z"
+                                fill="#FAB426" />
+                            <path
+                                d="M71.5 0L73.1839 5.18237H78.6329L74.2245 8.38525L75.9084 13.5676L71.5 10.3647L67.0916 13.5676L68.7755 8.38525L64.3671 5.18237H69.8161L71.5 0Z"
+                                fill="#FAB426" />
+                        </svg>
+                        <!--/ svg star group -->
+                        <div class="text-sm text-blue-400 my-1 font-normal mb-3">Reviews (1085)</div>
+                        <!-- svg like dislike -->
+                        <div class="flex items-center mx-auto w-fit my-6">
+                            <div class="flex items-center me-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                    <path d="M8 20H17C17.83 20 18.54 19.5 18.84 18.78L21.86 11.73C21.95 11.5 22 11.26 22 11V9C22 7.9 21.1 7 20 7H13.69L14.64 2.43L14.67 2.11C14.67 1.7 14.5 1.32 14.23 1.05L13.17 0L6.58 6.59C6.22 6.95 6 7.45 6 8V18C6 19.1 6.9 20 8 20ZM8 8L12.34 3.66L11 9H20V11L17 18H8V8ZM0 8H4V20H0V8Z" fill="#2FCD82"/>
+                                  </svg><span class="text-xs text-red-700 ms-1">896</span>
+                            </div>
+                              <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_59_277)">
+                                      <path d="M15 3H6C5.17 3 4.46 3.5 4.16 4.22L1.14 11.27C1.05 11.5 1 11.74 1 12V14C1 15.1 1.9 16 3 16H9.31L8.36 20.57L8.33 20.89C8.33 21.3 8.5 21.68 8.77 21.95L9.83 23L16.42 16.41C16.78 16.05 17 15.55 17 15V5C17 3.9 16.1 3 15 3ZM15 15L10.66 19.34L12 14H3V12L6 5H15V15ZM23 15H19V3H23V15Z" fill="#FF1111" fill-opacity="0.78"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_59_277">
+                                        <rect width="24" height="24" fill="white" transform="matrix(-1 0 0 -1 24 24)"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg><span class="text-xs text-red-700 ms-1">7</span>
+                              </div>
+                        </div>
+                        <!--/ svg like dislike -->
+                        <div class="text-sm my-1 font-normal opacity-85">Price Starting At <span
+                                class="text-warning text-2xl font-semibold my-3.5">$2.45</span> /MO</div>
+                        <div class="text-sm my-1 font-semibold opacity-85">Money Back in 45 Days</div>
+                    </div>
+                    <div class="col-span-6 px-2 min-w-full">
+                        <h6 class="font-bold mb-1 capitalize">Expert Overview</h6>
+                        <p><span class="font-semibold">Bruno Mirchevski:</span> FastComet has been making waves in the
+                            hosting industry since it established back in 2013. Owing to its variety of hosting options,
+                            flexible price points, and reliable customer service, it’s one of the most popular providers
+                            available in the US and around the world. <a class="text-blue-500 font-semibold"
+                                href="#">Read More</a></p>
+                        <button type="button" class="btn-success px-20 py-3 mt-5 w-72">Visit
+                            FastComet</button>
+                        <button type="button" class="btn-primary px-24 py-3 mt-5 w-72">Compare</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/ ranking -->
     </main>
     <!--/ main -->
 
