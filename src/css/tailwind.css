@@ -9,13 +9,16 @@
 }
 @layer components{
     .btn-primary{
-        @apply text-sm font-bold text-primary border-2 border-primary rounded-lg capitalize;
+        @apply bg-primary text-white rounded-lg shadow-md hover:ring-2;
+    }
+    .btn-outline-primary{
+        @apply text-sm font-bold text-primary border-2 border-primary rounded-lg capitalize shadow-md hover:ring-2;
     }
     .btn-success{
-        @apply text-sm rounded-lg font-bold text-white bg-success capitalize;
+        @apply text-sm rounded-lg font-bold text-white bg-success capitalize shadow-md hover:ring-2;
     }
     .btn-outline-blue{
-       @apply border-blue-500 border-2 rounded-xl;
+       @apply border-blue-500 border-2 rounded-xl hover:ring-2;
     }
     .card{
         @apply col-span-4 text-center bg-white rounded-md px-3 py-8 font-poppins shadow-sm min-w-full;
