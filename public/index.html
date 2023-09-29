@@ -27,10 +27,20 @@
                 </svg>
                 <!--/ svg -->
             </button>
+            <button type="button" id="closeBtn"
+                class="absolute sm:end-12 end-6 shadow-sm rounded-lg hidden top-4">
+                <!-- svg -->
+                <svg width="50px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="9" stroke="#2A4157" stroke-opacity="1" stroke-width="2"/>
+                    <path d="M16 8L8 16" stroke="#222222" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+                    <path d="M8 8L16 16" stroke="#222222" stroke-width="1.4" stroke-linecap="square" stroke-linejoin="round"/>
+                    </svg>
+                <!--/ svg -->
+            </button>
             <a href="#"
                 class="col-span-10 lg:col-span-2 text-slate-500 font-extrabold uppercase my-2.5 bg-slate-300 w-fit sm:px-20 sm:py-4 px-10 py-2 rounded-lg lg:me-0 shadow-md">
                 logo</a>
-            <div class="col-span-12 lg:col-span-6 hidden w-fit lg:block lg:px-11">
+            <div class="col-span-12 lg:col-span-6 hidden w-fit lg:flex lg:px-11">
                 <ul
                     class="capitalize font-open-sans text-xs font-normal xl:gap-x-6 lg:gap-x-3 lg:flex items-center ps-4 lg:ps-0 my-3 lg:my-0">
                     <li class="border-b-2 lg:border-0"><select class="cursor-pointer" name="" id="">
@@ -45,7 +55,8 @@
                     <li class="my-3 border-b-2 lg:border-0"><select class="cursor-pointer" name="" id="">
                             <option value="">Write Review</option>
                         </select></li>
-                    <li class="flex items-center border-b-2 lg:border-0 text-yellow-600 cursor-pointer"><svg
+                    <li class="flex items-center border-b-2 lg:border-0 text-yellow-600 cursor-pointer">
+                        <svg
                             class="me-1" xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15"
                             fill="none">
                             <path
@@ -58,7 +69,8 @@
                                     <stop offset="1" stop-color="#E73700" />
                                 </linearGradient>
                             </defs>
-                        </svg>Hosting Coupons</li>
+                        </svg>Hosting Coupons
+                    </li>
                 </ul>
             </div>
             <div class="col-span-12 lg:col-span-4 hidden items-center lg:ms-auto lg:flex pb-2 lg:pb-0 ps-4 lg:ps-0 ">
@@ -84,6 +96,10 @@
     </header>
     <!--/ header -->
 
+    <!-- aside -->
+    <aside></aside>
+    <!--/ aside -->
+
     <!-- main -->
     <main class="container mx-auto">
         <!-- banner -->
@@ -101,7 +117,7 @@
 
         <!-- fastcomet cards -->
         <section class="grid grid-cols-3 gap-x-10 xl:gap-x-32 w-full lg:mb-16 mb-8">
-            <div class="card col-span-3 lg:col-span-1 ">
+            <div class="card col-span-3 lg:col-span-1">
                 <h4 class="capitalize font-semibold text-xl">1 . FastComet</h4>
                 <div class="shadow-xl rounded-2xl w-fit mx-auto my-6">
                     <!-- svg buttons -->
@@ -179,9 +195,9 @@
                     <div class="text-sm my-1 font-normal opacity-85">Price Starting At <span
                             class="text-warning text-2xl font-semibold my-3.5">$2.45</span> /MO</div>
                     <div class="text-sm my-1 font-semibold opacity-85">Money Back in 45 Days</div>
-                    <button type="button" class="btn-success px-20 py-3 mt-5 w-72">Visit
+                    <button type="button" class="btn-success py-3 mt-5 sm:w-72 w-52">Visit
                         FastComet</button>
-                    <button type="button" class="btn-outline-primary px-24 py-3 mt-5 w-72">Compare</button>
+                    <button type="button" class="btn-outline-primary py-3 mt-5 sm:w-72 w-52">Compare</button>
                     <div class="mt-8 pb-2">
                         <h6 class="font-bold mb-1 capitalize">Expert Overview</h6>
                         <p><span class="font-semibold">Bruno Mirchevski:</span> FastComet has been making waves in the
@@ -270,9 +286,9 @@
                     <div class="text-sm my-1 font-normal opacity-85">Price Starting At <span
                             class="text-warning text-2xl font-semibold my-3.5">$2.45</span> /MO</div>
                     <div class="text-sm my-1 font-semibold opacity-85">Money Back in 45 Days</div>
-                    <button type="button" class="btn-success px-20 py-3 mt-5 w-72">Visit
+                    <button type="button" class="btn-success py-3 mt-5 sm:w-72 w-52">Visit
                         FastComet</button>
-                    <button type="button" class="btn-outline-primary px-24 py-3 mt-5 w-72">Compare</button>
+                    <button type="button" class="btn-outline-primary py-3 mt-5 sm:w-72 w-52">Compare</button>
                     <div class="mt-8 pb-2">
                         <h6 class="font-bold mb-1 capitalize">Expert Overview</h6>
                         <p><span class="font-semibold">Bruno Mirchevski:</span> FastComet has been making waves in the
@@ -361,9 +377,9 @@
                     <div class="text-sm my-1 font-normal opacity-85">Price Starting At <span
                             class="text-warning text-2xl font-semibold my-3.5">$2.45</span> /MO</div>
                     <div class="text-sm my-1 font-semibold opacity-85">Money Back in 45 Days</div>
-                    <button type="button" class="btn-success px-20 py-3 mt-5 w-72">Visit
+                    <button type="button" class="btn-success py-3 mt-5 sm:w-72 w-52">Visit
                         FastComet</button>
-                    <button type="button" class="btn-outline-primary px-24 py-3 mt-5 w-72">Compare</button>
+                    <button type="button" class="btn-outline-primary py-3 mt-5 sm:w-72 w-52">Compare</button>
                     <div class="mt-8 pb-2">
                         <h6 class="font-bold mb-1 capitalize">Expert Overview</h6>
                         <p><span class="font-semibold">Bruno Mirchevski:</span> FastComet has been making waves in the
@@ -381,7 +397,7 @@
         <section class="grid grid-cols-2 lg:gap-x-8 lg:gap-y-16 gap-y-8 pb-8 lg:pb-16">
             <h1 class="col-span-2 capitalize text-center bg-primary py-7 rounded-lg">Other Options By
                 Ranking</h1>
-            <div class="card col-span-2 lg:col-span-1">
+            <div class="card col-span-2 lg:col-span-1 px-0 sm:px-3">
                 <h4 class="capitalize font-semibold text-xl">4 . Hostinger</h4>
                 <div class="shadow-xl rounded-2xl w-fit mx-auto my-6">
                     <!-- svg buttons -->
@@ -489,20 +505,20 @@
                                 class="text-warning text-2xl font-semibold my-3.5">$2.45</span> /MO</div>
                         <div class="text-sm my-1 font-semibold opacity-85">Money Back in 45 Days</div>
                     </div>
-                    <div class="col-span-10 lg:col-span-6 px-2 min-w-full">
+                    <div class="col-span-10 lg:col-span-6 min-w-full">
                         <h6 class="font-bold mb-1 capitalize">Expert Overview</h6>
                         <p><span class="font-semibold">Bruno Mirchevski:</span> FastComet has been making waves in the
                             hosting industry since it established back in 2013. Owing to its variety of hosting options,
                             flexible price points, and reliable customer service, it’s one of the most popular providers
                             available in the US and around the world. <a class="text-blue-500 font-semibold"
                                 href="#">Read More</a></p>
-                        <button type="button" class="btn-success px-20 py-3 mt-5 w-72">Visit
+                        <button type="button" class="btn-success py-3 mt-5 sm:w-72 w-52">Visit
                             FastComet</button>
-                        <button type="button" class="btn-outline-primary px-24 py-3 mt-5 w-72">Compare</button>
+                        <button type="button" class="btn-outline-primary py-3 mt-5 sm:w-72 w-52">Compare</button>
                     </div>
                 </div>
             </div>
-            <div class="card col-span-2 lg:col-span-1">
+            <div class="card col-span-2 lg:col-span-1 px-0 sm:px-3">
                 <h4 class="capitalize font-semibold text-xl">5 . Hostinger</h4>
                 <div class="shadow-xl rounded-2xl w-fit mx-auto my-6">
                     <!-- svg buttons -->
@@ -610,20 +626,20 @@
                                 class="text-warning text-2xl font-semibold my-3.5">$2.45</span> /MO</div>
                         <div class="text-sm my-1 font-semibold opacity-85">Money Back in 45 Days</div>
                     </div>
-                    <div class="col-span-10 lg:col-span-6 px-2 min-w-full">
+                    <div class="col-span-10 lg:col-span-6 min-w-full">
                         <h6 class="font-bold mb-1 capitalize">Expert Overview</h6>
                         <p><span class="font-semibold">Bruno Mirchevski:</span> FastComet has been making waves in the
                             hosting industry since it established back in 2013. Owing to its variety of hosting options,
                             flexible price points, and reliable customer service, it’s one of the most popular providers
                             available in the US and around the world. <a class="text-blue-500 font-semibold"
                                 href="#">Read More</a></p>
-                        <button type="button" class="btn-success px-20 py-3 mt-5 w-72">Visit
+                        <button type="button" class="btn-success py-3 mt-5 sm:w-72 w-52">Visit
                             FastComet</button>
-                        <button type="button" class="btn-outline-primary px-24 py-3 mt-5 w-72">Compare</button>
+                        <button type="button" class="btn-outline-primary py-3 mt-5 sm:w-72 w-52">Compare</button>
                     </div>
                 </div>
             </div>
-            <div class="card col-span-2 lg:col-span-1">
+            <div class="card col-span-2 lg:col-span-1 px-0 sm:px-3">
                 <h4 class="capitalize font-semibold text-xl">6 . Hostinger</h4>
                 <div class="shadow-xl rounded-2xl w-fit mx-auto my-6">
                     <!-- svg buttons -->
@@ -731,20 +747,20 @@
                                 class="text-warning text-2xl font-semibold my-3.5">$2.45</span> /MO</div>
                         <div class="text-sm my-1 font-semibold opacity-85">Money Back in 45 Days</div>
                     </div>
-                    <div class="col-span-10 lg:col-span-6 px-2 min-w-full">
+                    <div class="col-span-10 lg:col-span-6 min-w-full">
                         <h6 class="font-bold mb-1 capitalize">Expert Overview</h6>
                         <p><span class="font-semibold">Bruno Mirchevski:</span> FastComet has been making waves in the
                             hosting industry since it established back in 2013. Owing to its variety of hosting options,
                             flexible price points, and reliable customer service, it’s one of the most popular providers
                             available in the US and around the world. <a class="text-blue-500 font-semibold"
                                 href="#">Read More</a></p>
-                        <button type="button" class="btn-success px-20 py-3 mt-5 w-72">Visit
+                        <button type="button" class="btn-success py-3 mt-5 sm:w-72 w-52">Visit
                             FastComet</button>
-                        <button type="button" class="btn-outline-primary px-24 py-3 mt-5 w-72">Compare</button>
+                        <button type="button" class="btn-outline-primary py-3 mt-5 sm:w-72 w-52">Compare</button>
                     </div>
                 </div>
             </div>
-            <div class="card col-span-2 lg:col-span-1">
+            <div class="card col-span-2 lg:col-span-1 px-0 sm:px-3">
                 <h4 class="capitalize font-semibold text-xl">7 . Hostinger</h4>
                 <div class="shadow-xl rounded-2xl w-fit mx-auto my-6">
                     <!-- svg buttons -->
@@ -852,23 +868,23 @@
                                 class="text-warning text-2xl font-semibold my-3.5">$2.45</span> /MO</div>
                         <div class="text-sm my-1 font-semibold opacity-85">Money Back in 45 Days</div>
                     </div>
-                    <div class="col-span-10 lg:col-span-6 px-2 min-w-full">
+                    <div class="col-span-10 lg:col-span-6 min-w-full">
                         <h6 class="font-bold mb-1 capitalize">Expert Overview</h6>
                         <p><span class="font-semibold">Bruno Mirchevski:</span> FastComet has been making waves in the
                             hosting industry since it established back in 2013. Owing to its variety of hosting options,
                             flexible price points, and reliable customer service, it’s one of the most popular providers
                             available in the US and around the world. <a class="text-blue-500 font-semibold"
                                 href="#">Read More</a></p>
-                        <button type="button" class="btn-success px-20 py-3 mt-5 w-72">Visit
+                        <button type="button" class="btn-success py-3 mt-5 sm:w-72 w-52">Visit
                             FastComet</button>
-                        <button type="button" class="btn-outline-primary px-24 py-3 mt-5 w-72">Compare</button>
+                        <button type="button" class="btn-outline-primary py-3 mt-5 sm:w-72 w-52">Compare</button>
                     </div>
                 </div>
             </div>
             <div class="bg-white justify-between flex w-fit shadow-lg mx-auto col-span-2">
                 <button class="btn-primary px-4 py-2">1</button>
                 <button class="btn-outline-primary px-4 py-2 mx-4">2</button>
-                <button class="btn-outline-primary px-4 py-2">3</button>
+                <button class="btn-outline-primary px-4 py-2 hidden sm:block">3</button>
                 <button class="btn-outline-primary px-4 py-2 mx-4"><strong>...</strong></button>
                 <button class="btn-outline-primary px-4 py-2">114</button>
             </div>
@@ -1114,18 +1130,178 @@
     <!--/ main -->
 
     <!-- footer -->
-    <footer class="bg-primary w-full relative py-24 font-poppins">
-        <!-- <img class="absolute end-0" src="../images/banner-svg.webp" alt="">
-        <img class="absolute bottom-0" src="../images/banner-svg.webp" alt="">
-        <img class="absolute " src="../images/Vector.png" alt="">
-        <img class="absolute " src="../images/Vector.png" alt=""> -->
+    <footer class="bg-primary w-full relative md:py-24 py-8 font-poppins">
+        <div class="w-fit absolute end-0 -top-10">
+            <svg width="200" height="274" viewBox="0 0 288 274" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.07" d="M261.755 115.492C261.755 116.98 261.72 118.468 261.616 119.856C276.524 130.668 288 153.846 288 174.246C288 196.465 274.375 206.947 257.56 197.689C257.525 197.656 257.491 197.656 257.456 197.623L151.818 139.529C151.783 139.496 151.749 139.496 151.679 139.463C132.784 129.048 117.46 100.382 117.46 75.4186C117.46 52.0425 130.912 40.1726 148.143 47.3474C150.258 31.3115 161.525 24.4012 175.116 31.9066C181.634 35.5106 187.632 41.8258 192.312 49.4305C199.107 39.8089 210.687 37.3622 223.792 44.5701C244.767 56.0763 261.755 87.8506 261.755 115.492Z" fill="url(#paint0_linear_11_4)"/>
+                <path opacity="0.4" d="M244.42 131.363C244.42 132.85 244.386 134.338 244.282 135.727C259.19 146.539 270.665 169.717 270.665 190.117C270.665 212.336 257.04 222.817 240.225 213.559C240.191 213.526 240.156 213.526 240.121 213.493L134.483 155.4C134.448 155.367 134.414 155.367 134.344 155.334C115.45 144.919 100.126 116.252 100.126 91.2893C100.126 67.9131 113.577 56.0432 130.808 63.2181C132.923 47.1821 144.191 40.2718 157.781 47.7773C164.299 51.3812 170.297 57.6964 174.977 65.3011C181.772 55.6795 193.352 53.2328 206.457 60.4407C227.432 71.9469 244.42 103.721 244.42 131.363Z" fill="url(#paint1_linear_11_4)"/>
+                <path opacity="0.2" d="M77.1745 159.665L61.0878 150.804V145.613L77.1745 154.474C78.492 155.202 80.3988 156.656 82.0283 158.905C83.7964 161.318 85.0445 164.36 85.0445 167.667C85.0445 171.304 84.0738 173.387 82.2016 173.982C80.4681 174.544 78.4226 173.585 77.1398 172.891L70.518 169.254L70.4833 169.221C69.9286 168.89 69.0272 168.592 68.2991 168.791C67.7097 168.956 67.051 169.518 67.051 171.535C67.051 173.552 67.7097 174.808 68.2644 175.536C68.9578 176.462 69.8592 177.123 70.414 177.387L70.4833 177.421L90.6956 188.563V193.754L70.5873 182.678C69.2005 181.983 67.2244 180.529 65.4909 178.214C63.6187 175.701 62.3013 172.494 62.336 168.923C62.336 165.385 63.6187 163.567 65.4909 163.071C67.2244 162.608 69.2005 163.269 70.5873 164.096L77.1398 167.7C78.0759 168.229 78.804 168.46 79.2547 168.295C79.6014 168.196 80.2948 167.7 80.2948 165.055C80.2948 163.368 79.7054 162.244 79.1854 161.484C78.5613 160.624 77.6946 159.963 77.1745 159.665Z" fill="white"/>
+                <path opacity="0.6" d="M64.5545 149.515C64.5545 153.78 61.9196 155.797 58.6954 154.044C55.4711 152.259 52.8362 147.365 52.8362 143.067C52.8362 138.802 55.4711 136.785 58.6954 138.537C61.9196 140.323 64.5545 145.249 64.5545 149.515Z" fill="#F2994A"/>
+                <path opacity="0.6" d="M98.8774 195.473C98.8774 199.739 96.2425 201.756 93.0182 200.003C89.7939 198.218 87.159 193.324 87.159 189.026C87.159 184.761 89.7939 182.744 93.0182 184.496C96.2425 186.282 98.8774 191.208 98.8774 195.473Z" fill="#F2994A"/>
+                <path opacity="0.07" d="M126.579 85.6353L230.553 142.869V195.341L126.544 138.108L126.579 85.6353Z" fill="url(#paint2_linear_11_4)"/>
+                <path opacity="0.3" d="M112.676 92.2481L216.65 149.482V201.954L112.676 144.72V92.2481Z" fill="url(#paint3_linear_11_4)"/>
+                <path opacity="0.6" d="M122.002 123.493C122.002 127.726 124.637 132.586 127.861 134.371C131.085 136.157 133.72 134.173 133.72 129.941C133.72 125.709 131.085 120.848 127.861 119.063C124.637 117.277 122.002 119.261 122.002 123.493Z" fill="#F2994A"/>
+                <path opacity="0.15" d="M136.667 131.66C136.667 133.611 137.881 135.892 139.406 136.719C140.897 137.546 142.111 136.62 142.111 134.669C142.111 132.718 140.897 130.437 139.372 129.61C137.881 128.784 136.667 129.709 136.667 131.66Z" fill="white"/>
+                <path opacity="0.15" d="M145.023 136.256C145.023 138.207 146.236 140.488 147.762 141.315C149.252 142.141 150.466 141.216 150.466 139.265C150.466 137.314 149.252 135.033 147.727 134.206C146.236 133.379 145.023 134.305 145.023 136.256Z" fill="white"/>
+                <path opacity="0.15" d="M190.405 145.183V175.04L186.314 172.792V142.935L190.405 145.183Z" fill="white"/>
+                <path opacity="0.15" d="M199.35 150.143V179.999L195.259 177.751V147.895L199.35 150.143Z" fill="white"/>
+                <path opacity="0.15" d="M208.329 155.102V184.959L204.238 182.711V152.854L208.329 155.102Z" fill="white"/>
+                <path opacity="0.07" d="M126.544 157.351L230.518 214.584V267.057L126.544 209.823V157.351Z" fill="url(#paint4_linear_11_4)"/>
+                <path opacity="0.3" d="M112.676 164.294L216.65 221.528V274L112.676 216.766V164.294Z" fill="url(#paint5_linear_11_4)"/>
+                <path d="M122.002 195.539C122.002 199.772 124.637 204.632 127.861 206.417C131.085 208.203 133.72 206.219 133.72 201.987C133.72 197.755 131.085 192.894 127.861 191.109C124.637 189.323 122.002 191.307 122.002 195.539Z" fill="#F2994A" fill-opacity="0.6"/>
+                <path opacity="0.15" d="M136.667 203.739C136.667 205.69 137.881 207.972 139.406 208.798C140.897 209.625 142.111 208.699 142.111 206.748C142.111 204.797 140.897 202.516 139.372 201.689C137.881 200.863 136.667 201.755 136.667 203.739Z" fill="white"/>
+                <path opacity="0.15" d="M144.988 208.335C144.988 210.286 146.202 212.567 147.727 213.394C149.218 214.221 150.431 213.295 150.431 211.344C150.431 209.393 149.218 207.112 147.692 206.285C146.202 205.426 144.988 206.351 144.988 208.335Z" fill="white"/>
+                <path opacity="0.15" d="M190.405 218.254V248.111L186.314 245.863V216.006L190.405 218.254Z" fill="white"/>
+                <path opacity="0.15" d="M199.35 223.214V253.071L195.259 250.822V220.966L199.35 223.214Z" fill="white"/>
+                <path opacity="0.15" d="M208.329 228.173V258.03L204.238 255.782V225.925L208.329 228.173Z" fill="white"/>
+                <path opacity="0.3" d="M20.3511 14.5151L85.1485 50.1909V164.691L20.3511 128.982V14.5151Z" fill="url(#paint6_linear_11_4)"/>
+                <path opacity="0.6" d="M60.3597 55.9771C60.3597 61.6971 56.8928 64.4083 52.6284 62.0277C48.3641 59.6472 44.8971 53.1005 44.8971 47.3805C44.8971 41.6604 48.3641 38.9492 52.6284 41.3298C56.8928 43.7104 60.3597 50.257 60.3597 55.9771Z" fill="#F2C94C"/>
+                <path opacity="0.6" d="M52.6284 66.6236C45.7292 62.7882 40.0434 66.3922 39.0379 74.6581C38.8646 76.0799 40.0087 77.9976 41.3955 78.7581L63.896 91.2893C65.2828 92.0497 66.4269 91.4546 66.2536 89.8014C65.2135 80.3782 59.493 70.459 52.6284 66.6236Z" fill="#F2C94C"/>
+                <path opacity="0.15" d="M33.3522 88.7764L71.9741 110.036V114.533L33.3522 93.273V88.7764Z" fill="white"/>
+                <path opacity="0.15" d="M37.2698 99.8528L67.883 116.682V121.179L37.2698 104.349V99.8528Z" fill="white"/>
+                <path opacity="0.6" d="M45.0704 118.765L0 93.9344V106.73L45.0704 131.561V118.765Z" fill="#F2C94C"/>
+                <path opacity="0.2" d="M99.1204 0L108.759 18.0529C110.076 20.5326 109.868 23.0124 108.273 23.6076C106.678 24.2027 104.321 22.6487 103.003 20.1689L102.899 19.9375V39.9742C102.899 42.2556 101.235 43.1814 99.1551 42.0572C97.0749 40.9 95.4108 38.1557 95.4108 35.8743V15.8376L95.3068 15.9368C93.9893 16.9617 91.5971 15.9037 90.037 13.5562C88.4422 11.2086 88.2342 8.4974 89.5516 7.47242L99.1204 0Z" fill="url(#paint7_linear_11_4)"/>
+                <path opacity="0.2" d="M99.1203 266.561L89.4821 248.508C88.1647 246.028 88.3727 243.548 89.9675 242.953C91.5623 242.358 93.9198 243.912 95.2373 246.392L95.3413 246.623V226.586C95.3413 224.305 97.0054 223.379 99.0856 224.503C101.166 225.661 102.83 228.405 102.83 230.686V250.723L102.934 250.624C104.251 249.599 106.644 250.657 108.204 253.004C109.799 255.352 110.007 258.063 108.689 259.088L99.1203 266.561Z" fill="url(#paint8_linear_11_4)"/>
+                <defs>
+                <linearGradient id="paint0_linear_11_4" x1="281.798" y1="52.3515" x2="179.348" y2="154.247" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_11_4" x1="264.459" y1="68.2222" x2="162.01" y2="170.118" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="paint2_linear_11_4" x1="176.423" y1="89.8312" x2="179.947" y2="182.661" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="paint3_linear_11_4" x1="162.554" y1="96.444" x2="166.078" y2="189.274" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="paint4_linear_11_4" x1="176.415" y1="161.558" x2="179.939" y2="254.387" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="paint5_linear_11_4" x1="162.547" y1="168.501" x2="166.071" y2="261.331" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="paint6_linear_11_4" x1="92.0929" y1="24.5782" x2="38.5669" y2="121.816" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="paint7_linear_11_4" x1="105.979" y1="18.2102" x2="88.7995" y2="28.2519" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="paint8_linear_11_4" x1="92.2432" y1="248.363" x2="109.423" y2="238.321" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                </defs>
+                </svg>
+        </div>
+        <div class="w-fit absolute start-36 top-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="151" viewBox="0 0 65 151" fill="none">
+                <path opacity="0.2" d="M0 0L64.7974 35.6759V150.176L0 114.467V0Z" fill="url(#paint0_linear_59_4)"/>
+                <defs>
+                  <linearGradient id="paint0_linear_59_4" x1="71.7418" y1="10.0631" x2="18.2159" y2="107.3" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+        </div>
+        <div class="w-fit absolute end-96 bottom-0 me-28">
+            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="151" viewBox="0 0 65 151" fill="none">
+                <path opacity="0.1" d="M0 0L64.7974 35.6759V150.176L0 114.467V0Z" fill="url(#paint0_linear_59_4)"/>
+                <defs>
+                  <linearGradient id="paint0_linear_59_4" x1="71.7418" y1="10.0631" x2="18.2159" y2="107.3" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+        </div>
+        <div class="w-fit absolute bottom-0 start-0 overflow-hidden origin-bottom-right">
+            <svg width="200" height="200" viewBox="0 0 288 274" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.07" d="M261.755 115.492C261.755 116.98 261.72 118.468 261.616 119.856C276.524 130.668 288 153.846 288 174.246C288 196.465 274.375 206.947 257.56 197.689C257.525 197.656 257.491 197.656 257.456 197.623L151.818 139.529C151.783 139.496 151.749 139.496 151.679 139.463C132.784 129.048 117.46 100.382 117.46 75.4186C117.46 52.0425 130.912 40.1726 148.143 47.3474C150.258 31.3115 161.525 24.4012 175.116 31.9066C181.634 35.5106 187.632 41.8258 192.312 49.4305C199.107 39.8089 210.687 37.3622 223.792 44.5701C244.767 56.0763 261.755 87.8506 261.755 115.492Z" fill="url(#paint0_linear_11_4)"/>
+                <path opacity="0.4" d="M244.42 131.363C244.42 132.85 244.386 134.338 244.282 135.727C259.19 146.539 270.665 169.717 270.665 190.117C270.665 212.336 257.04 222.817 240.225 213.559C240.191 213.526 240.156 213.526 240.121 213.493L134.483 155.4C134.448 155.367 134.414 155.367 134.344 155.334C115.45 144.919 100.126 116.252 100.126 91.2893C100.126 67.9131 113.577 56.0432 130.808 63.2181C132.923 47.1821 144.191 40.2718 157.781 47.7773C164.299 51.3812 170.297 57.6964 174.977 65.3011C181.772 55.6795 193.352 53.2328 206.457 60.4407C227.432 71.9469 244.42 103.721 244.42 131.363Z" fill="url(#paint1_linear_11_4)"/>
+                <path opacity="0.2" d="M77.1745 159.665L61.0878 150.804V145.613L77.1745 154.474C78.492 155.202 80.3988 156.656 82.0283 158.905C83.7964 161.318 85.0445 164.36 85.0445 167.667C85.0445 171.304 84.0738 173.387 82.2016 173.982C80.4681 174.544 78.4226 173.585 77.1398 172.891L70.518 169.254L70.4833 169.221C69.9286 168.89 69.0272 168.592 68.2991 168.791C67.7097 168.956 67.051 169.518 67.051 171.535C67.051 173.552 67.7097 174.808 68.2644 175.536C68.9578 176.462 69.8592 177.123 70.414 177.387L70.4833 177.421L90.6956 188.563V193.754L70.5873 182.678C69.2005 181.983 67.2244 180.529 65.4909 178.214C63.6187 175.701 62.3013 172.494 62.336 168.923C62.336 165.385 63.6187 163.567 65.4909 163.071C67.2244 162.608 69.2005 163.269 70.5873 164.096L77.1398 167.7C78.0759 168.229 78.804 168.46 79.2547 168.295C79.6014 168.196 80.2948 167.7 80.2948 165.055C80.2948 163.368 79.7054 162.244 79.1854 161.484C78.5613 160.624 77.6946 159.963 77.1745 159.665Z" fill="white"/>
+                <path opacity="0.6" d="M64.5545 149.515C64.5545 153.78 61.9196 155.797 58.6954 154.044C55.4711 152.259 52.8362 147.365 52.8362 143.067C52.8362 138.802 55.4711 136.785 58.6954 138.537C61.9196 140.323 64.5545 145.249 64.5545 149.515Z" fill="#F2994A"/>
+                <path opacity="0.6" d="M98.8774 195.473C98.8774 199.739 96.2425 201.756 93.0182 200.003C89.7939 198.218 87.159 193.324 87.159 189.026C87.159 184.761 89.7939 182.744 93.0182 184.496C96.2425 186.282 98.8774 191.208 98.8774 195.473Z" fill="#F2994A"/>
+                <path opacity="0.07" d="M126.579 85.6353L230.553 142.869V195.341L126.544 138.108L126.579 85.6353Z" fill="url(#paint2_linear_11_4)"/>
+                <path opacity="0.3" d="M112.676 92.2481L216.65 149.482V201.954L112.676 144.72V92.2481Z" fill="url(#paint3_linear_11_4)"/>
+                <path opacity="0.6" d="M122.002 123.493C122.002 127.726 124.637 132.586 127.861 134.371C131.085 136.157 133.72 134.173 133.72 129.941C133.72 125.709 131.085 120.848 127.861 119.063C124.637 117.277 122.002 119.261 122.002 123.493Z" fill="#F2994A"/>
+                <path opacity="0.15" d="M136.667 131.66C136.667 133.611 137.881 135.892 139.406 136.719C140.897 137.546 142.111 136.62 142.111 134.669C142.111 132.718 140.897 130.437 139.372 129.61C137.881 128.784 136.667 129.709 136.667 131.66Z" fill="white"/>
+                <path opacity="0.15" d="M145.023 136.256C145.023 138.207 146.236 140.488 147.762 141.315C149.252 142.141 150.466 141.216 150.466 139.265C150.466 137.314 149.252 135.033 147.727 134.206C146.236 133.379 145.023 134.305 145.023 136.256Z" fill="white"/>
+                <path opacity="0.15" d="M190.405 145.183V175.04L186.314 172.792V142.935L190.405 145.183Z" fill="white"/>
+                <path opacity="0.15" d="M199.35 150.143V179.999L195.259 177.751V147.895L199.35 150.143Z" fill="white"/>
+                <path opacity="0.15" d="M208.329 155.102V184.959L204.238 182.711V152.854L208.329 155.102Z" fill="white"/>
+                <path opacity="0.07" d="M126.544 157.351L230.518 214.584V267.057L126.544 209.823V157.351Z" fill="url(#paint4_linear_11_4)"/>
+                <path opacity="0.3" d="M112.676 164.294L216.65 221.528V274L112.676 216.766V164.294Z" fill="url(#paint5_linear_11_4)"/>
+                <path d="M122.002 195.539C122.002 199.772 124.637 204.632 127.861 206.417C131.085 208.203 133.72 206.219 133.72 201.987C133.72 197.755 131.085 192.894 127.861 191.109C124.637 189.323 122.002 191.307 122.002 195.539Z" fill="#F2994A" fill-opacity="0.6"/>
+                <path opacity="0.15" d="M136.667 203.739C136.667 205.69 137.881 207.972 139.406 208.798C140.897 209.625 142.111 208.699 142.111 206.748C142.111 204.797 140.897 202.516 139.372 201.689C137.881 200.863 136.667 201.755 136.667 203.739Z" fill="white"/>
+                <path opacity="0.15" d="M144.988 208.335C144.988 210.286 146.202 212.567 147.727 213.394C149.218 214.221 150.431 213.295 150.431 211.344C150.431 209.393 149.218 207.112 147.692 206.285C146.202 205.426 144.988 206.351 144.988 208.335Z" fill="white"/>
+                <path opacity="0.15" d="M190.405 218.254V248.111L186.314 245.863V216.006L190.405 218.254Z" fill="white"/>
+                <path opacity="0.15" d="M199.35 223.214V253.071L195.259 250.822V220.966L199.35 223.214Z" fill="white"/>
+                <path opacity="0.15" d="M208.329 228.173V258.03L204.238 255.782V225.925L208.329 228.173Z" fill="white"/>
+                <path opacity="0.3" d="M20.3511 14.5151L85.1485 50.1909V164.691L20.3511 128.982V14.5151Z" fill="url(#paint6_linear_11_4)"/>
+                <path opacity="0.6" d="M60.3597 55.9771C60.3597 61.6971 56.8928 64.4083 52.6284 62.0277C48.3641 59.6472 44.8971 53.1005 44.8971 47.3805C44.8971 41.6604 48.3641 38.9492 52.6284 41.3298C56.8928 43.7104 60.3597 50.257 60.3597 55.9771Z" fill="#F2C94C"/>
+                <path opacity="0.6" d="M52.6284 66.6236C45.7292 62.7882 40.0434 66.3922 39.0379 74.6581C38.8646 76.0799 40.0087 77.9976 41.3955 78.7581L63.896 91.2893C65.2828 92.0497 66.4269 91.4546 66.2536 89.8014C65.2135 80.3782 59.493 70.459 52.6284 66.6236Z" fill="#F2C94C"/>
+                <path opacity="0.15" d="M33.3522 88.7764L71.9741 110.036V114.533L33.3522 93.273V88.7764Z" fill="white"/>
+                <path opacity="0.15" d="M37.2698 99.8528L67.883 116.682V121.179L37.2698 104.349V99.8528Z" fill="white"/>
+                <path opacity="0.6" d="M45.0704 118.765L0 93.9344V106.73L45.0704 131.561V118.765Z" fill="#F2C94C"/>
+                <path opacity="0.2" d="M99.1204 0L108.759 18.0529C110.076 20.5326 109.868 23.0124 108.273 23.6076C106.678 24.2027 104.321 22.6487 103.003 20.1689L102.899 19.9375V39.9742C102.899 42.2556 101.235 43.1814 99.1551 42.0572C97.0749 40.9 95.4108 38.1557 95.4108 35.8743V15.8376L95.3068 15.9368C93.9893 16.9617 91.5971 15.9037 90.037 13.5562C88.4422 11.2086 88.2342 8.4974 89.5516 7.47242L99.1204 0Z" fill="url(#paint7_linear_11_4)"/>
+                <path opacity="0.2" d="M99.1203 266.561L89.4821 248.508C88.1647 246.028 88.3727 243.548 89.9675 242.953C91.5623 242.358 93.9198 243.912 95.2373 246.392L95.3413 246.623V226.586C95.3413 224.305 97.0054 223.379 99.0856 224.503C101.166 225.661 102.83 228.405 102.83 230.686V250.723L102.934 250.624C104.251 249.599 106.644 250.657 108.204 253.004C109.799 255.352 110.007 258.063 108.689 259.088L99.1203 266.561Z" fill="url(#paint8_linear_11_4)"/>
+                <defs>
+                <linearGradient id="paint0_linear_11_4" x1="281.798" y1="52.3515" x2="179.348" y2="154.247" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_11_4" x1="264.459" y1="68.2222" x2="162.01" y2="170.118" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="paint2_linear_11_4" x1="176.423" y1="89.8312" x2="179.947" y2="182.661" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="paint3_linear_11_4" x1="162.554" y1="96.444" x2="166.078" y2="189.274" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="paint4_linear_11_4" x1="176.415" y1="161.558" x2="179.939" y2="254.387" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="paint5_linear_11_4" x1="162.547" y1="168.501" x2="166.071" y2="261.331" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="paint6_linear_11_4" x1="92.0929" y1="24.5782" x2="38.5669" y2="121.816" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="paint7_linear_11_4" x1="105.979" y1="18.2102" x2="88.7995" y2="28.2519" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="paint8_linear_11_4" x1="92.2432" y1="248.363" x2="109.423" y2="238.321" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+                </linearGradient>
+                </defs>
+                </svg>
+        </div>        
         <div class="container mx-auto text-white">
             <div class="grid grid-cols-12">
-                <div class="col-span-6 flex items-center">
-                    <h2 class="capitalize text-4.5xl">Company Tagline</h2>
+                <div class="col-span-12 md:col-span-6 flex items-center justify-center md:justify-star">
+                    <h2 class="capitalize text-4.5xl text-center sm:text-start">Company Tagline</h2>
                 </div>
                 <!-- svg social -->
-                <div class="col-span-6 flex items-center  justify-center ps-44">
+                <div class="col-span-12 md:col-span-6 flex items-center justify-center md:ps-44 mt-6 md:mt-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
                         <path d="M38.3911 20.9402C38.3911 11.3076 30.5733 3.48975 20.9406 3.48975C11.3079 3.48975 3.49011 11.3076 3.49011 20.9402C3.49011 29.3863 9.49308 36.4188 17.4505 38.0417V26.1754H13.9604V20.9402H17.4505V16.5776C17.4505 13.2097 20.1902 10.4699 23.5582 10.4699H27.9208V15.7051H24.4307C23.4709 15.7051 22.6857 16.4904 22.6857 17.4501V20.9402H27.9208V26.1754H22.6857V38.3035C31.4982 37.431 38.3911 29.997 38.3911 20.9402Z" fill="white"/>
                       </svg>
@@ -1153,7 +1329,7 @@
                       </svg>
                 </div>
                 <!--/ svg social -->
-                <div class="col-span-3 pt-14">
+                <div class="col-span-12 md:col-span-6 lg:col-span-3 pt-14 text-center md:text-start">
                     <h4 class="text-xl uppercase font-extrabold mb-6">Useful</h4>
                     <ul class="text-xl leading-9 capitalize">
                         <li>Overall Best Web Hosts</li>
@@ -1162,7 +1338,7 @@
                         <li>Claim Web Hosting</li>
                     </ul>
                 </div>
-                <div class="col-span-3 pt-14">
+                <div class="col-span-12 md:col-span-6 lg:col-span-3 pt-14 text-center md:text-start">
                     <h4 class="text-xl uppercase font-extrabold mb-6">About</h4>
                     <ul class="text-xl leading-9 capitalize">
                         <li>About Us</li>
@@ -1171,7 +1347,7 @@
                         <li>Personal Data Removal Request</li>
                     </ul>
                 </div>
-                <div class="col-span-3 pt-14">
+                <div class="col-span-12 md:col-span-6 lg:col-span-3 pt-14 text-center md:text-start">
                     <h4 class="text-xl uppercase font-extrabold mb-6">Legal</h4>
                     <ul class="text-xl leading-9 capitalize">
                         <li>Terms & Conditions</li>
@@ -1179,10 +1355,10 @@
                         <li>Terms of Use</li>
                     </ul>
                 </div>
-                <div class="col-span-3 pt-14">
+                <div class="col-span-12 md:col-span-6 lg:col-span-3 pt-14 text-center md:text-start">
                     <h4 class="text-xl uppercase font-extrabold mb-6">Subscribe now</h4>
-                    <input type="email" name="" id="" placeholder="E-Mail Adress" class="ps-4 py-4 w-72">
-                    <button>send</button>
+                    <input type="email" name="" id="" placeholder="E-Mail Address" class="ps-4 py-4 pe-10 rounded-lg"><br>
+                    <button class="btn-dark py-3 px-14 mt-4">send</button>
                 </div>
             </div>
         </div>
