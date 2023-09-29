@@ -1351,6 +1351,34 @@ h1{
   width: 100vw;
 }
 
+.w-9\/12{
+  width: 75%;
+}
+
+.w-9{
+  width: 2.25rem;
+}
+
+.w-4{
+  width: 1rem;
+}
+
+.w-4\/5{
+  width: 80%;
+}
+
+.w-11{
+  width: 2.75rem;
+}
+
+.w-11\/12{
+  width: 91.666667%;
+}
+
+.w-5{
+  width: 1.25rem;
+}
+
 .min-w-full{
   min-width: 100%;
 }
@@ -1385,6 +1413,10 @@ h1{
 
 .max-w-xs{
   max-width: 20rem;
+}
+
+.max-w-7xl{
+  max-width: 80rem;
 }
 
 .flex-shrink{
@@ -2467,6 +2499,14 @@ h1{
     width: 18rem;
   }
 
+  .sm\:max-w-xl{
+    max-width: 36rem;
+  }
+
+  .sm\:max-w-7xl{
+    max-width: 80rem;
+  }
+
   .sm\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
@@ -2494,6 +2534,26 @@ h1{
 
   .md\:mt-0{
     margin-top: 0px;
+  }
+
+  .md\:w-4\/5{
+    width: 80%;
+  }
+
+  .md\:w-3\/5{
+    width: 60%;
+  }
+
+  .md\:w-3\/12{
+    width: 25%;
+  }
+
+  .md\:w-5\/12{
+    width: 41.666667%;
+  }
+
+  .md\:justify-start{
+    justify-content: flex-start;
   }
 
   .md\:py-24{
@@ -2592,6 +2652,14 @@ h1{
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:w-11{
+    width: 2.75rem;
+  }
+
+  .lg\:w-11\/12{
+    width: 91.666667%;
   }
 
   .lg\:gap-x-3{
