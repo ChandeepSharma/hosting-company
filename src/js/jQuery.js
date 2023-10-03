@@ -18,7 +18,5 @@ $(document).ready(function(){
         $("aside").show("500");
         // $("main").removeClass("mx-auto")
         $(this).hide("500");
-
-
     })
 })
