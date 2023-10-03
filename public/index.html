@@ -6,11 +6,11 @@
     <title>Hosting Company Compare Website (Community)</title>
 
     <!-- meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- tailwind css -->
-    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="tailwind.css" />
 </head>
 
 <body class="bg-slate-100">
@@ -44,18 +44,26 @@
             <div class="col-span-12 lg:col-span-6 hidden w-fit lg:flex lg:px-11">
                 <ul
                     class="capitalize font-open-sans text-xs font-normal xl:gap-x-6 lg:gap-x-3 lg:flex items-center ps-4 lg:ps-0 my-3 lg:my-0">
-                    <li class="border-b-2 lg:border-0"><select class="cursor-pointer" name="" id="">
+                    <li class="border-b-2 lg:border-0">
+                        <select class="cursor-pointer" name="" id="">
                             <option value="">Review</option>
-                        </select></li>
-                    <li class="my-3 border-b-2 lg:border-0"><select class="cursor-pointer" name="" id="">
+                        </select>
+                    </li>
+                    <li class="my-3 border-b-2 lg:border-0">
+                        <select class="cursor-pointer" name="" id="">
                             <option value="">Tools</option>
-                        </select></li>
-                    <li class="border-b-2 lg:border-0"><select class="cursor-pointer" name="" id="">
+                        </select>
+                    </li>
+                    <li class="border-b-2 lg:border-0">
+                        <select class="cursor-pointer" name="" id="">
                             <option value="">Resources</option>
-                        </select></li>
-                    <li class="my-3 border-b-2 lg:border-0"><select class="cursor-pointer" name="" id="">
+                        </select>
+                    </li>
+                    <li class="my-3 border-b-2 lg:border-0">
+                        <select class="cursor-pointer" name="" id="">
                             <option value="">Write Review</option>
-                        </select></li>
+                        </select>
+                    </li>
                     <li class="flex items-center border-b-2 lg:border-0 text-yellow-600 cursor-pointer">
                         <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15"
                             fill="none">
@@ -73,11 +81,12 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-span-12 lg:col-span-4 hidden items-center lg:ms-auto lg:flex pb-2 lg:pb-0 ps-4 lg:ps-0 ">
+            <div class="col-span-12 lg:col-span-4 hidden items-center lg:ms-auto lg:flex pb-2 lg:pb-0 ps-4 lg:ps-0">
                 <div class="w-fit relative flex items-center my-3 lg:my-0">
                     <input class="xl:pe-24 lg:pe-10 text-xs bg-slate-100 rounded-full py-2 ps-5 pe-8 shadow-md"
-                        type="search" name="" id="" placeholder="Search For a specific host"><svg class="absolute end-4"
-                        xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                        type="search" name="" id="" placeholder="Search For a specific host" /><svg
+                        class="absolute end-4" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                        viewBox="0 0 15 15" fill="none">
                         <path
                             d="M10.7204 9.43396H10.0429L9.80274 9.2024C10.6432 8.2247 11.1492 6.9554 11.1492 5.57461C11.1492 2.49571 8.65352 0 5.57461 0C2.49571 0 0 2.49571 0 5.57461C0 8.65352 2.49571 11.1492 5.57461 11.1492C6.9554 11.1492 8.2247 10.6432 9.2024 9.80274L9.43396 10.0429V10.7204L13.7221 15L15 13.7221L10.7204 9.43396ZM5.57461 9.43396C3.43911 9.43396 1.71527 7.71012 1.71527 5.57461C1.71527 3.43911 3.43911 1.71527 5.57461 1.71527C7.71012 1.71527 9.43396 3.43911 9.43396 5.57461C9.43396 7.71012 7.71012 9.43396 5.57461 9.43396Z"
                             fill="black" fill-opacity="0.6" />
@@ -96,18 +105,17 @@
     </header>
     <!--/ header -->
 
-    <section class="flex">
+    <section class="flex relative">
         <!-- aside -->
         <aside class="w-3/12 my-16">
             <div class="mx-auto w-8/12">
-                <button class="btn-primary w-full py-3 text-xl font-semibold flex items-center px-4">
+                <button id="asideBarBtn" class="btn-primary w-full py-3 text-xl font-semibold flex items-center px-4">
                     <svg xmlns="http://www.w3.org/2000/svg" width="10" height="17" viewBox="0 0 10 17" fill="none">
                         <path d="M10 15.0025L3.81402 8.5L10 1.9975L8.08625 0L0 8.5L8.08625 17L10 15.0025Z"
                             fill="white" />
                     </svg>
-                    <span class="mx-auto">
-                        Categories
-                    </span></button>
+                    <span class="mx-auto"> Categories </span>
+                </button>
                 <div class="text-start my-9 text-xl">Popular Hosting Categories</div>
                 <ul class="capitalize w-fit mx-auto leading-8 list-image-[url(../images/Group.png)]">
                     <li>VPS Hosting</li>
@@ -116,11 +124,13 @@
                     <li>WordPress Hosting</li>
                     <li>Shared Hosting</li>
                     <li>CDN Services</li>
-                    <div class="text-blue-600 font-semibold flex items-center justify-center text-sm my-5">Expand <svg
-                            class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                    <div class="text-blue-600 font-semibold flex items-center justify-center text-sm my-5">
+                        Expand
+                        <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
                             fill="none">
                             <path d="M0 7H12.17L6.58 1.41L8 0L16 8L8 16L6.59 14.59L12.17 9H0V7Z" fill="#2979FF" />
-                        </svg></div>
+                        </svg>
+                    </div>
                 </ul>
                 <select name="" id=""
                     class="w-full py-3 rounded-lg border-2 border-blue-500 px-2 bg-slate-100 font-medium">
@@ -183,23 +193,33 @@
                         </select>
                     </li>
                 </ul>
-
             </div>
         </aside>
         <!--/ aside -->
 
         <!-- main -->
-        <main class="w-9/12 ms-auto">
+        <main class="w-9/12">
             <!-- banner -->
             <section class="bg-primary grid grid-cols-12 items-center lg:px-17 px-2 py-3.5 rounded-lg lg:my-16 my-8">
-                <div class="lg:col-span-8 col-span-12 order-2 lg:order-1 text-center lg:text-start pt-5 lg:pt-0">
+                <button id="asideBarBtnMain"
+                    class="btn-primary absolute -start-20 -rotate-90 py-2 px-16 top-96 text-xl font-semibold hidden">
+                    catregories
+                    <svg class="-rotate-90 mx-auto mt-2" xmlns="http://www.w3.org/2000/svg" width="10" height="17"
+                        viewBox="0 0 10 17" fill="none">
+                        <path d="M10 15.0025L3.81402 8.5L10 1.9975L8.08625 0L0 8.5L8.08625 17L10 15.0025Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <div
+                    class="lg:col-span-8 col-span-12 order-2 lg:order-1 text-center lg:text-start pt-5 lg:pt-0 bg-gray-600">
                     <h1>Best Web Hosting Services of 2021</h1>
-                    <p class="text-xs text-white py-5">75,145 Authentic User reviews by paying customers on 4,634
-                        Different
-                        Hosting Services.</p>
+                    <p class="text-xs text-white py-5">
+                        75,145 Authentic User reviews by paying customers on 4,634
+                        Different Hosting Services.
+                    </p>
                 </div>
-                <div class="lg:col-span-4 col-span-12 lg:ms-auto order-1 lg:order-2">
-                    <img class="h-80 mx-auto" src="../images/banner-svg.webp" alt="">
+                <div class="lg:col-span-4 col-span-12 lg:ms-auto order-1 lg:order-2 bg-red-600">
+                    <img class="h-80 mx-auto lg:mx-0" src="../images/banner-svg.webp" alt="" />
                 </div>
             </section>
             <!--/ banner -->
@@ -260,7 +280,7 @@
                         </button>
                         <!-- svg buttons -->
                     </div>
-                    <img class="mx-auto" src="../images/fastcomet.png" alt="" width="49%">
+                    <img class="mx-auto" src="../images/fastcomet.png" alt="" width="49%" />
                     <div>
                         <div class="text-5xl my-4">9.6</div>
                         <!-- svg star group -->
@@ -283,24 +303,34 @@
                                 fill="#FAB426" />
                         </svg>
                         <!--/ svg star group -->
-                        <div class="text-sm text-blue-400 my-1 font-normal mb-3">Reviews (1085)</div>
-                        <div class="text-sm my-1 font-normal opacity-85">Price Starting At <span
-                                class="text-warning text-2xl font-semibold my-3.5">$2.45</span> /MO</div>
-                        <div class="text-sm my-1 font-semibold opacity-85">Money Back in 45 Days</div>
-                        <button type="button" class="btn-success py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">Visit
-                            FastComet</button>
-                        <button type="button"
-                            class="btn-outline-primary py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">Compare</button>
+                        <div class="text-sm text-blue-400 my-1 font-normal mb-3">
+                            Reviews (1085)
+                        </div>
+                        <div class="text-sm my-1 font-normal opacity-85">
+                            Price Starting At
+                            <span class="text-warning text-2xl font-semibold my-3.5">$2.45</span>
+                            /MO
+                        </div>
+                        <div class="text-sm my-1 font-semibold opacity-85">
+                            Money Back in 45 Days
+                        </div>
+                        <button type="button" class="btn-success py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">
+                            Visit FastComet
+                        </button>
+                        <button type="button" class="btn-outline-primary py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">
+                            Compare
+                        </button>
                         <div class="mt-8 pb-2">
                             <h6 class="font-bold mb-1 capitalize">Expert Overview</h6>
-                            <p><span class="font-semibold">Bruno Mirchevski:</span> FastComet has been making waves in
-                                the
-                                hosting industry since it established back in 2013. Owing to its variety of hosting
-                                options,
-                                flexible price points, and reliable customer service, it’s one of the most popular
-                                providers
-                                available in the US and around the world. <a class="text-blue-500 font-semibold"
-                                    href="#">Read More</a></p>
+                            <p>
+                                <span class="font-semibold">Bruno Mirchevski:</span> FastComet
+                                has been making waves in the hosting industry since it
+                                established back in 2013. Owing to its variety of hosting
+                                options, flexible price points, and reliable customer service,
+                                it’s one of the most popular providers available in the US and
+                                around the world.
+                                <a class="text-blue-500 font-semibold" href="#">Read More</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -358,7 +388,7 @@
                         </button>
                         <!-- svg buttons -->
                     </div>
-                    <img class="mx-auto" src="../images/fastcomet.png" alt="" width="49%">
+                    <img class="mx-auto" src="../images/fastcomet.png" alt="" width="49%" />
                     <div>
                         <div class="text-5xl my-4">9.6</div>
                         <!-- svg star group -->
@@ -381,24 +411,34 @@
                                 fill="#FAB426" />
                         </svg>
                         <!--/ svg star group -->
-                        <div class="text-sm text-blue-400 my-1 font-normal mb-3">Reviews (1085)</div>
-                        <div class="text-sm my-1 font-normal opacity-85">Price Starting At <span
-                                class="text-warning text-2xl font-semibold my-3.5">$2.45</span> /MO</div>
-                        <div class="text-sm my-1 font-semibold opacity-85">Money Back in 45 Days</div>
-                        <button type="button" class="btn-success py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">Visit
-                            FastComet</button>
-                        <button type="button"
-                            class="btn-outline-primary py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">Compare</button>
+                        <div class="text-sm text-blue-400 my-1 font-normal mb-3">
+                            Reviews (1085)
+                        </div>
+                        <div class="text-sm my-1 font-normal opacity-85">
+                            Price Starting At
+                            <span class="text-warning text-2xl font-semibold my-3.5">$2.45</span>
+                            /MO
+                        </div>
+                        <div class="text-sm my-1 font-semibold opacity-85">
+                            Money Back in 45 Days
+                        </div>
+                        <button type="button" class="btn-success py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">
+                            Visit FastComet
+                        </button>
+                        <button type="button" class="btn-outline-primary py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">
+                            Compare
+                        </button>
                         <div class="mt-8 pb-2">
                             <h6 class="font-bold mb-1 capitalize">Expert Overview</h6>
-                            <p><span class="font-semibold">Bruno Mirchevski:</span> FastComet has been making waves in
-                                the
-                                hosting industry since it established back in 2013. Owing to its variety of hosting
-                                options,
-                                flexible price points, and reliable customer service, it’s one of the most popular
-                                providers
-                                available in the US and around the world. <a class="text-blue-500 font-semibold"
-                                    href="#">Read More</a></p>
+                            <p>
+                                <span class="font-semibold">Bruno Mirchevski:</span> FastComet
+                                has been making waves in the hosting industry since it
+                                established back in 2013. Owing to its variety of hosting
+                                options, flexible price points, and reliable customer service,
+                                it’s one of the most popular providers available in the US and
+                                around the world.
+                                <a class="text-blue-500 font-semibold" href="#">Read More</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -456,7 +496,7 @@
                         </button>
                         <!-- svg buttons -->
                     </div>
-                    <img class="mx-auto" src="../images/fastcomet.png" alt="" width="49%">
+                    <img class="mx-auto" src="../images/fastcomet.png" alt="" width="49%" />
                     <div>
                         <div class="text-5xl my-4">9.6</div>
                         <!-- svg star group -->
@@ -479,24 +519,34 @@
                                 fill="#FAB426" />
                         </svg>
                         <!--/ svg star group -->
-                        <div class="text-sm text-blue-400 my-1 font-normal mb-3">Reviews (1085)</div>
-                        <div class="text-sm my-1 font-normal opacity-85">Price Starting At <span
-                                class="text-warning text-2xl font-semibold my-3.5">$2.45</span> /MO</div>
-                        <div class="text-sm my-1 font-semibold opacity-85">Money Back in 45 Days</div>
-                        <button type="button" class="btn-success py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">Visit
-                            FastComet</button>
-                        <button type="button"
-                            class="btn-outline-primary py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">Compare</button>
+                        <div class="text-sm text-blue-400 my-1 font-normal mb-3">
+                            Reviews (1085)
+                        </div>
+                        <div class="text-sm my-1 font-normal opacity-85">
+                            Price Starting At
+                            <span class="text-warning text-2xl font-semibold my-3.5">$2.45</span>
+                            /MO
+                        </div>
+                        <div class="text-sm my-1 font-semibold opacity-85">
+                            Money Back in 45 Days
+                        </div>
+                        <button type="button" class="btn-success py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">
+                            Visit FastComet
+                        </button>
+                        <button type="button" class="btn-outline-primary py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">
+                            Compare
+                        </button>
                         <div class="mt-8 pb-2">
                             <h6 class="font-bold mb-1 capitalize">Expert Overview</h6>
-                            <p><span class="font-semibold">Bruno Mirchevski:</span> FastComet has been making waves in
-                                the
-                                hosting industry since it established back in 2013. Owing to its variety of hosting
-                                options,
-                                flexible price points, and reliable customer service, it’s one of the most popular
-                                providers
-                                available in the US and around the world. <a class="text-blue-500 font-semibold"
-                                    href="#">Read More</a></p>
+                            <p>
+                                <span class="font-semibold">Bruno Mirchevski:</span> FastComet
+                                has been making waves in the hosting industry since it
+                                established back in 2013. Owing to its variety of hosting
+                                options, flexible price points, and reliable customer service,
+                                it’s one of the most popular providers available in the US and
+                                around the world.
+                                <a class="text-blue-500 font-semibold" href="#">Read More</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -505,8 +555,9 @@
 
             <!-- ranking -->
             <section class="grid grid-cols-2 lg:gap-x-8 lg:gap-y-16 gap-y-8 pb-8 lg:pb-16">
-                <h1 class="col-span-2 capitalize text-center bg-primary py-7 rounded-lg">Other Options By
-                    Ranking</h1>
+                <h1 class="col-span-2 capitalize text-center bg-primary py-7 rounded-lg">
+                    Other Options By Ranking
+                </h1>
                 <div class="card col-span-2 lg:col-span-1 px-0 sm:px-3">
                     <h4 class="capitalize font-semibold text-xl">4 . Hostinger</h4>
                     <div class="shadow-xl rounded-2xl w-fit mx-auto my-6">
@@ -561,7 +612,7 @@
                         </button>
                         <!-- svg buttons -->
                     </div>
-                    <img class="mx-auto" src="../images/holister.png" alt="" width="49%">
+                    <img class="mx-auto" src="../images/holister.png" alt="" width="49%" />
                     <div class="grid grid-cols-10">
                         <div class="col-span-10 lg:col-span-4">
                             <div class="text-5xl mb-4">9.6</div>
@@ -585,7 +636,9 @@
                                     fill="#FAB426" />
                             </svg>
                             <!--/ svg star group -->
-                            <div class="text-sm text-blue-400 my-1 font-normal mb-3">Reviews (1085)</div>
+                            <div class="text-sm text-blue-400 my-1 font-normal mb-3">
+                                Reviews (1085)
+                            </div>
                             <!-- svg like dislike -->
                             <div class="flex items-center mx-auto w-fit my-6">
                                 <div class="flex items-center me-4">
@@ -614,24 +667,32 @@
                                 </div>
                             </div>
                             <!--/ svg like dislike -->
-                            <div class="text-sm my-1 font-normal opacity-85">Price Starting At <span
-                                    class="text-warning text-2xl font-semibold my-3.5">$2.45</span> /MO</div>
-                            <div class="text-sm my-1 font-semibold opacity-85">Money Back in 45 Days</div>
+                            <div class="text-sm my-1 font-normal opacity-85">
+                                Price Starting At
+                                <span class="text-warning text-2xl font-semibold my-3.5">$2.45</span>
+                                /MO
+                            </div>
+                            <div class="text-sm my-1 font-semibold opacity-85">
+                                Money Back in 45 Days
+                            </div>
                         </div>
                         <div class="col-span-10 lg:col-span-6 min-w-full">
                             <h6 class="font-bold mb-1 capitalize">Expert Overview</h6>
-                            <p><span class="font-semibold">Bruno Mirchevski:</span> FastComet has been making waves in
-                                the
-                                hosting industry since it established back in 2013. Owing to its variety of hosting
-                                options,
-                                flexible price points, and reliable customer service, it’s one of the most popular
-                                providers
-                                available in the US and around the world. <a class="text-blue-500 font-semibold"
-                                    href="#">Read More</a></p>
-                            <button type="button" class="btn-success py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">Visit
-                                FastComet</button>
-                            <button type="button"
-                                class="btn-outline-primary py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">Compare</button>
+                            <p>
+                                <span class="font-semibold">Bruno Mirchevski:</span> FastComet
+                                has been making waves in the hosting industry since it
+                                established back in 2013. Owing to its variety of hosting
+                                options, flexible price points, and reliable customer service,
+                                it’s one of the most popular providers available in the US and
+                                around the world.
+                                <a class="text-blue-500 font-semibold" href="#">Read More</a>
+                            </p>
+                            <button type="button" class="btn-success py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">
+                                Visit FastComet
+                            </button>
+                            <button type="button" class="btn-outline-primary py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">
+                                Compare
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -689,7 +750,7 @@
                         </button>
                         <!-- svg buttons -->
                     </div>
-                    <img class="mx-auto" src="../images/holister.png" alt="" width="49%">
+                    <img class="mx-auto" src="../images/holister.png" alt="" width="49%" />
                     <div class="grid grid-cols-10">
                         <div class="col-span-10 lg:col-span-4">
                             <div class="text-5xl mb-4">9.6</div>
@@ -713,7 +774,9 @@
                                     fill="#FAB426" />
                             </svg>
                             <!--/ svg star group -->
-                            <div class="text-sm text-blue-400 my-1 font-normal mb-3">Reviews (1085)</div>
+                            <div class="text-sm text-blue-400 my-1 font-normal mb-3">
+                                Reviews (1085)
+                            </div>
                             <!-- svg like dislike -->
                             <div class="flex items-center mx-auto w-fit my-6">
                                 <div class="flex items-center me-4">
@@ -742,24 +805,32 @@
                                 </div>
                             </div>
                             <!--/ svg like dislike -->
-                            <div class="text-sm my-1 font-normal opacity-85">Price Starting At <span
-                                    class="text-warning text-2xl font-semibold my-3.5">$2.45</span> /MO</div>
-                            <div class="text-sm my-1 font-semibold opacity-85">Money Back in 45 Days</div>
+                            <div class="text-sm my-1 font-normal opacity-85">
+                                Price Starting At
+                                <span class="text-warning text-2xl font-semibold my-3.5">$2.45</span>
+                                /MO
+                            </div>
+                            <div class="text-sm my-1 font-semibold opacity-85">
+                                Money Back in 45 Days
+                            </div>
                         </div>
                         <div class="col-span-10 lg:col-span-6 min-w-full">
                             <h6 class="font-bold mb-1 capitalize">Expert Overview</h6>
-                            <p><span class="font-semibold">Bruno Mirchevski:</span> FastComet has been making waves in
-                                the
-                                hosting industry since it established back in 2013. Owing to its variety of hosting
-                                options,
-                                flexible price points, and reliable customer service, it’s one of the most popular
-                                providers
-                                available in the US and around the world. <a class="text-blue-500 font-semibold"
-                                    href="#">Read More</a></p>
-                            <button type="button" class="btn-success py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">Visit
-                                FastComet</button>
-                            <button type="button"
-                                class="btn-outline-primary py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">Compare</button>
+                            <p>
+                                <span class="font-semibold">Bruno Mirchevski:</span> FastComet
+                                has been making waves in the hosting industry since it
+                                established back in 2013. Owing to its variety of hosting
+                                options, flexible price points, and reliable customer service,
+                                it’s one of the most popular providers available in the US and
+                                around the world.
+                                <a class="text-blue-500 font-semibold" href="#">Read More</a>
+                            </p>
+                            <button type="button" class="btn-success py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">
+                                Visit FastComet
+                            </button>
+                            <button type="button" class="btn-outline-primary py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">
+                                Compare
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -817,7 +888,7 @@
                         </button>
                         <!-- svg buttons -->
                     </div>
-                    <img class="mx-auto" src="../images/holister.png" alt="" width="49%">
+                    <img class="mx-auto" src="../images/holister.png" alt="" width="49%" />
                     <div class="grid grid-cols-10">
                         <div class="col-span-10 lg:col-span-4">
                             <div class="text-5xl mb-4">9.6</div>
@@ -841,7 +912,9 @@
                                     fill="#FAB426" />
                             </svg>
                             <!--/ svg star group -->
-                            <div class="text-sm text-blue-400 my-1 font-normal mb-3">Reviews (1085)</div>
+                            <div class="text-sm text-blue-400 my-1 font-normal mb-3">
+                                Reviews (1085)
+                            </div>
                             <!-- svg like dislike -->
                             <div class="flex items-center mx-auto w-fit my-6">
                                 <div class="flex items-center me-4">
@@ -870,24 +943,32 @@
                                 </div>
                             </div>
                             <!--/ svg like dislike -->
-                            <div class="text-sm my-1 font-normal opacity-85">Price Starting At <span
-                                    class="text-warning text-2xl font-semibold my-3.5">$2.45</span> /MO</div>
-                            <div class="text-sm my-1 font-semibold opacity-85">Money Back in 45 Days</div>
+                            <div class="text-sm my-1 font-normal opacity-85">
+                                Price Starting At
+                                <span class="text-warning text-2xl font-semibold my-3.5">$2.45</span>
+                                /MO
+                            </div>
+                            <div class="text-sm my-1 font-semibold opacity-85">
+                                Money Back in 45 Days
+                            </div>
                         </div>
                         <div class="col-span-10 lg:col-span-6 min-w-full">
                             <h6 class="font-bold mb-1 capitalize">Expert Overview</h6>
-                            <p><span class="font-semibold">Bruno Mirchevski:</span> FastComet has been making waves in
-                                the
-                                hosting industry since it established back in 2013. Owing to its variety of hosting
-                                options,
-                                flexible price points, and reliable customer service, it’s one of the most popular
-                                providers
-                                available in the US and around the world. <a class="text-blue-500 font-semibold"
-                                    href="#">Read More</a></p>
-                            <button type="button" class="btn-success py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">Visit
-                                FastComet</button>
-                            <button type="button"
-                                class="btn-outline-primary py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">Compare</button>
+                            <p>
+                                <span class="font-semibold">Bruno Mirchevski:</span> FastComet
+                                has been making waves in the hosting industry since it
+                                established back in 2013. Owing to its variety of hosting
+                                options, flexible price points, and reliable customer service,
+                                it’s one of the most popular providers available in the US and
+                                around the world.
+                                <a class="text-blue-500 font-semibold" href="#">Read More</a>
+                            </p>
+                            <button type="button" class="btn-success py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">
+                                Visit FastComet
+                            </button>
+                            <button type="button" class="btn-outline-primary py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">
+                                Compare
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -945,7 +1026,7 @@
                         </button>
                         <!-- svg buttons -->
                     </div>
-                    <img class="mx-auto" src="../images/holister.png" alt="" width="49%">
+                    <img class="mx-auto" src="../images/holister.png" alt="" width="49%" />
                     <div class="grid grid-cols-10">
                         <div class="col-span-10 lg:col-span-4">
                             <div class="text-5xl mb-4">9.6</div>
@@ -969,7 +1050,9 @@
                                     fill="#FAB426" />
                             </svg>
                             <!--/ svg star group -->
-                            <div class="text-sm text-blue-400 my-1 font-normal mb-3">Reviews (1085)</div>
+                            <div class="text-sm text-blue-400 my-1 font-normal mb-3">
+                                Reviews (1085)
+                            </div>
                             <!-- svg like dislike -->
                             <div class="flex items-center mx-auto w-fit my-6">
                                 <div class="flex items-center me-4">
@@ -998,32 +1081,44 @@
                                 </div>
                             </div>
                             <!--/ svg like dislike -->
-                            <div class="text-sm my-1 font-normal opacity-85">Price Starting At <span
-                                    class="text-warning text-2xl font-semibold my-3.5">$2.45</span> /MO</div>
-                            <div class="text-sm my-1 font-semibold opacity-85">Money Back in 45 Days</div>
+                            <div class="text-sm my-1 font-normal opacity-85">
+                                Price Starting At
+                                <span class="text-warning text-2xl font-semibold my-3.5">$2.45</span>
+                                /MO
+                            </div>
+                            <div class="text-sm my-1 font-semibold opacity-85">
+                                Money Back in 45 Days
+                            </div>
                         </div>
                         <div class="col-span-10 lg:col-span-6 min-w-full">
                             <h6 class="font-bold mb-1 capitalize">Expert Overview</h6>
-                            <p><span class="font-semibold">Bruno Mirchevski:</span> FastComet has been making waves in
-                                the
-                                hosting industry since it established back in 2013. Owing to its variety of hosting
-                                options,
-                                flexible price points, and reliable customer service, it’s one of the most popular
-                                providers
-                                available in the US and around the world. <a class="text-blue-500 font-semibold"
-                                    href="#">Read More</a></p>
-                            <button type="button" class="btn-success py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">Visit
-                                FastComet</button>
-                            <button type="button"
-                                class="btn-outline-primary py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">Compare</button>
+                            <p>
+                                <span class="font-semibold">Bruno Mirchevski:</span> FastComet
+                                has been making waves in the hosting industry since it
+                                established back in 2013. Owing to its variety of hosting
+                                options, flexible price points, and reliable customer service,
+                                it’s one of the most popular providers available in the US and
+                                around the world.
+                                <a class="text-blue-500 font-semibold" href="#">Read More</a>
+                            </p>
+                            <button type="button" class="btn-success py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">
+                                Visit FastComet
+                            </button>
+                            <button type="button" class="btn-outline-primary py-3 mt-5 w-11/12 md:w-5/12 lg:w-11/12">
+                                Compare
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="bg-white justify-between flex w-fit shadow-lg mx-auto col-span-2">
                     <button class="btn-primary px-4 py-2">1</button>
                     <button class="btn-outline-primary px-4 py-2 mx-4">2</button>
-                    <button class="btn-outline-primary px-4 py-2 hidden sm:block">3</button>
-                    <button class="btn-outline-primary px-4 py-2 mx-4"><strong>...</strong></button>
+                    <button class="btn-outline-primary px-4 py-2 hidden sm:block">
+                        3
+                    </button>
+                    <button class="btn-outline-primary px-4 py-2 mx-4">
+                        <strong>...</strong>
+                    </button>
                     <button class="btn-outline-primary px-4 py-2">114</button>
                 </div>
             </section>
@@ -1031,287 +1126,226 @@
 
             <!-- hosting tires -->
             <section class="w-full lg:mb-64 pb-6">
-                <h1 class="col-span-2 capitalize text-center bg-primary py-7 rounded-lg">Familiarize Yourself With Web
-                    Hosting Tiers</h1>
+                <h1 class="col-span-2 capitalize text-center bg-primary py-7 rounded-lg">
+                    Familiarize Yourself With Web Hosting Tiers
+                </h1>
                 <div class="lg:mt-16 mt-8 ps-3 font-poppins">
                     <div class="py-3">
                         <h3 class="font-bold text-2xl">What Is Shared Web Hosting?</h3>
                         <p class="text-xl my-4 text-slate-700">
-                            Shared hosting is web hosting in which the provider houses multiple sites on a single
-                            server.
-                            For example, Site A shares the same server with Site B, Site C, Site D, and Site E. The
-                            upside
-                            is that the multiple sites share the server cost, so shared web hosting is generally very
-                            inexpensive. It's cheap web hosting. In fact, you can find an option for less than $10 per
+                            Shared hosting is web hosting in which the provider houses
+                            multiple sites on a single server. For example, Site A shares
+                            the same server with Site B, Site C, Site D, and Site E. The
+                            upside is that the multiple sites share the server cost, so
+                            shared web hosting is generally very inexpensive. It's cheap web
+                            hosting. In fact, you can find an option for less than $10 per
                             month.
                         </p>
                         <p class="text-xl text-slate-700">
-                            You could think of the sites that share your server as your roommates; there's really not
-                            that
-                            much
-                            separating you from them. Sure, you can close the bedroom door, but they can still cause
-                            nightmares for
-                            you in the kitchen and the bathroom. In web hosting terms, all the sites share a single
-                            server's
-                            resources, so huge traffic spikes on Site A may impact the neighboring sites' performances.
-                            It's
-                            even
-                            possible that another site could take down the shared server altogether, if it crashed hard
+                            You could think of the sites that share your server as your
+                            roommates; there's really not that much separating you from
+                            them. Sure, you can close the bedroom door, but they can still
+                            cause nightmares for you in the kitchen and the bathroom. In web
+                            hosting terms, all the sites share a single server's resources,
+                            so huge traffic spikes on Site A may impact the neighboring
+                            sites' performances. It's even possible that another site could
+                            take down the shared server altogether, if it crashed hard
                             enough.
                         </p>
                     </div>
                     <div class="py-3">
                         <h3 class="font-bold text-2xl">What Is VPS Web Hosting?</h3>
                         <p class="text-xl my-4 text-slate-700">
-                            VPS hosting is similar to shared hosting in that multiple sites share the same server, but
-                            the
-                            similarities end there. In housing terms, VPS hosting is like renting your own apartment in
-                            a
-                            larger
-                            building. You're much more isolated than in the roommate situation mentioned above; it's
-                            still
-                            possible
-                            that a neighboring apartment could causes annoyance for you, but far less likely. In web
-                            hosting
-                            terms,
-                            Site A's traffic surge won't have nearly as much impact on Site B or Site C. As you'd
-                            expect,
-                            VPS
-                            hosting costs more than shared hosting. You'll pay roughly $20 to $60 per month.
+                            VPS hosting is similar to shared hosting in that multiple sites
+                            share the same server, but the similarities end there. In
+                            housing terms, VPS hosting is like renting your own apartment in
+                            a larger building. You're much more isolated than in the
+                            roommate situation mentioned above; it's still possible that a
+                            neighboring apartment could causes annoyance for you, but far
+                            less likely. In web hosting terms, Site A's traffic surge won't
+                            have nearly as much impact on Site B or Site C. As you'd expect,
+                            VPS hosting costs more than shared hosting. You'll pay roughly
+                            $20 to $60 per month.
                         </p>
                     </div>
                     <div class="py-3">
                         <h3 class="font-bold text-2xl">What Is Dedicated Web Hosting?</h3>
                         <p class="text-xl text-slate-700">
-                            Dedicated hosting, on the other hand, is both powerful and pricey. It's reserved for sites
-                            that
-                            require
-                            an incredible amount of server resources.
+                            Dedicated hosting, on the other hand, is both powerful and
+                            pricey. It's reserved for sites that require an incredible
+                            amount of server resources.
                         </p>
                         <p class="text-xl text-slate-700 my-4">
-                            Unlike shared or VPS hosting, dedicated hosting makes your website the lone tenant on a
-                            server.
-                            To
-                            extend the housing metaphor, having a dedicated server is like owning your own home. The
-                            means
-                            that your
-                            website taps the server's full power, and pays for the privilege. If you're looking for a
-                            high-powered
-                            site—an online mansion for your business—dedicated hosting is the way to go. That said, many
-                            dedicated
-                            web hosting services task you with handling backend, technical issues, much as homeowners
-                            have
-                            manage
-                            maintenance that renters generally leave to their landlords.
+                            Unlike shared or VPS hosting, dedicated hosting makes your
+                            website the lone tenant on a server. To extend the housing
+                            metaphor, having a dedicated server is like owning your own
+                            home. The means that your website taps the server's full power,
+                            and pays for the privilege. If you're looking for a high-powered
+                            site—an online mansion for your business—dedicated hosting is
+                            the way to go. That said, many dedicated web hosting services
+                            task you with handling backend, technical issues, much as
+                            homeowners have manage maintenance that renters generally leave
+                            to their landlords.
                         </p>
                         <p class="text-xl text-slate-700">
-                            On the topic of dedicated hosting, many web hosting services also offer managed hosting.
-                            This
-                            type of
-                            hosting sees the web host act as your IT department, handling a server's maintenance and
-                            upkeep.
-                            This
-                            hosting option is something that you'd typically find with dedicated servers, so it's a
-                            business-centric
-                            addition. Naturally, it adds a few bucks to the hosting cost, but nothing that should break
-                            the
-                            bank if
-                            you have the resources for a dedicated server.
+                            On the topic of dedicated hosting, many web hosting services
+                            also offer managed hosting. This type of hosting sees the web
+                            host act as your IT department, handling a server's maintenance
+                            and upkeep. This hosting option is something that you'd
+                            typically find with dedicated servers, so it's a
+                            business-centric addition. Naturally, it adds a few bucks to the
+                            hosting cost, but nothing that should break the bank if you have
+                            the resources for a dedicated server.
                         </p>
                     </div>
                     <div class="py-3">
                         <h3 class="font-bold text-2xl">What Is WordPress Web Hosting?</h3>
                         <p class="text-xl text-slate-700">
-                            WordPress hosting is for people who want to build their sites on the back of the popular
-                            WordPress
-                            content management system (CMS) from WordPress.org. There are multiple ways to set up shop
-                            using
-                            this
-                            free, open-source blogging and site-building platform.
+                            WordPress hosting is for people who want to build their sites on
+                            the back of the popular WordPress content management system
+                            (CMS) from WordPress.org. There are multiple ways to set up shop
+                            using this free, open-source blogging and site-building
+                            platform.
                         </p>
                         <p class="text-xl text-slate-700 my-4">
-                            You gain the most web-building functionality if you create a self-hosted site. This
-                            typically
-                            involves
-                            transferring the free WordPress CMS to server or signing up for a web host's optimized
-                            WordPress
-                            plan.
-                            With an optimized plan, the host automatically handles backend stuff, so you don't have to
-                            worry
-                            about
-                            updating the plug-ins and CMS, and enabling automatic backups. In these instances, the
-                            WordPress
-                            environment typically comes pre-installed on the server.
+                            You gain the most web-building functionality if you create a
+                            self-hosted site. This typically involves transferring the free
+                            WordPress CMS to server or signing up for a web host's optimized
+                            WordPress plan. With an optimized plan, the host automatically
+                            handles backend stuff, so you don't have to worry about updating
+                            the plug-ins and CMS, and enabling automatic backups. In these
+                            instances, the WordPress environment typically comes
+                            pre-installed on the server.
                         </p>
                         <p class="text-xl text-slate-700">
-                            You can also host your website on WordPress.com, but that's different from the kind of
-                            hosting
-                            mentioned
-                            above. WordPress.com uses the same code from WordPress.org, but it hides the server code and
-                            handles the
-                            hosting for you. In that sense, it resembles entries in our online site builder roundup.
-                            It's a
-                            simpler
-                            but less flexible and customizable way to approach WordPress hosting. It's definitely
-                            easier,
-                            but if you
-                            want to tinker and adjust and optimize every aspect of your site, it might not be for you.
+                            You can also host your website on WordPress.com, but that's
+                            different from the kind of hosting mentioned above.
+                            WordPress.com uses the same code from WordPress.org, but it
+                            hides the server code and handles the hosting for you. In that
+                            sense, it resembles entries in our online site builder roundup.
+                            It's a simpler but less flexible and customizable way to
+                            approach WordPress hosting. It's definitely easier, but if you
+                            want to tinker and adjust and optimize every aspect of your
+                            site, it might not be for you.
                         </p>
                     </div>
                     <div class="py-3">
                         <h3 class="font-bold text-2xl">Business-Friendly Features</h3>
                         <p class="text-xl text-slate-700">
-                            When it's time to set up shop, look for a web host that offers the aforementioned dedicated
-                            servers, as
-                            well as advanced cloud server platforms (such as Amazon Web Services or Google Cloud),
-                            custom
-                            server
-                            builds should you need it, and 24/7 customer support. Depending on your business' focus, you
-                            may
-                            need a
-                            web host that can handle pageviews or visitors that rank in the high thousands or millions.
-                            Many
-                            busy
-                            hosting plans offer an onboarding specialist that can help you get started, too.
+                            When it's time to set up shop, look for a web host that offers
+                            the aforementioned dedicated servers, as well as advanced cloud
+                            server platforms (such as Amazon Web Services or Google Cloud),
+                            custom server builds should you need it, and 24/7 customer
+                            support. Depending on your business' focus, you may need a web
+                            host that can handle pageviews or visitors that rank in the high
+                            thousands or millions. Many busy hosting plans offer an
+                            onboarding specialist that can help you get started, too.
                         </p>
                         <p class="text-xl text-slate-700 my-4">
-                            If you're planning on selling a product, look for a web host that offers a Secure Sockets
-                            Layer
-                            (SSL)
-                            certificate, because it encrypts the data between the customer's browser and web host to
-                            safeguard
-                            purchasing information. You're probably familiar with SSL; it's the green padlock that
-                            appears
-                            in your
-                            web browser's address bar as you visit an online financial institution or retail outlet. A
-                            few
-                            companies
-                            toss in a SSL certificate free of charge; others may charge you roughly $100 per year for
-                            that
-                            extra
-                            security layer.
+                            If you're planning on selling a product, look for a web host
+                            that offers a Secure Sockets Layer (SSL) certificate, because it
+                            encrypts the data between the customer's browser and web host to
+                            safeguard purchasing information. You're probably familiar with
+                            SSL; it's the green padlock that appears in your web browser's
+                            address bar as you visit an online financial institution or
+                            retail outlet. A few companies toss in a SSL certificate free of
+                            charge; others may charge you roughly $100 per year for that
+                            extra security layer.
                         </p>
                     </div>
                     <div class="py-3">
                         <h3 class="font-bold text-2xl">Extra Web Hosting Info</h3>
                         <p class="text-xl text-slate-700">
-                            If you're not sure of the type of hosting your business needs, you might want to start
-                            small,
-                            with
-                            shared web hosting. You can always graduate to a more robust, feature-rich package of, say,
-                            VPS
-                            hosting
-                            or even dedicated hosting in the future. Unfortunately, some hosts don't offer all hosting
-                            types.
-                            Consider how much you expect to grow your website, and how soon, before you commit to
-                            anything
-                            longer
-                            than a one-year plan. It's worth spending the time up front to make sure that the host you
-                            select with
-                            is able to provide the growth you envision for your site, as switching web hosting providers
-                            midstream
-                            is not a trivial undertaking.
+                            If you're not sure of the type of hosting your business needs,
+                            you might want to start small, with shared web hosting. You can
+                            always graduate to a more robust, feature-rich package of, say,
+                            VPS hosting or even dedicated hosting in the future.
+                            Unfortunately, some hosts don't offer all hosting types.
+                            Consider how much you expect to grow your website, and how soon,
+                            before you commit to anything longer than a one-year plan. It's
+                            worth spending the time up front to make sure that the host you
+                            select with is able to provide the growth you envision for your
+                            site, as switching web hosting providers midstream is not a
+                            trivial undertaking.
                         </p>
                         <p class="text-xl text-slate-700 mt-4">
-                            Once you decide your price range, you need to consider how long you'll need web hosting. If
-                            it's
-                            a
-                            short-term project—say, less than a month or two—you can typically receive a refund should
-                            you
-                            cancel
-                            your hosting within 60 days. Some companies offer 30-day money-back guarantees, others offer
-                            90-day
-                            money-back guarantees. Once again, it's beneficial to do your homework.
+                            Once you decide your price range, you need to consider how long
+                            you'll need web hosting. If it's a short-term project—say, less
+                            than a month or two—you can typically receive a refund should
+                            you cancel your hosting within 60 days. Some companies offer
+                            30-day money-back guarantees, others offer 90-day money-back
+                            guarantees. Once again, it's beneficial to do your homework.
                         </p>
                     </div>
                     <div class="py-3">
-                        <h3 class="font-bold text-2xl">The Web Hosting Features You Need</h3>
+                        <h3 class="font-bold text-2xl">
+                            The Web Hosting Features You Need
+                        </h3>
                         <p class="text-xl text-slate-700">
-                            Many web hosts offer limited features in their starter packages and then expand the
-                            offerings
-                            (sometimes
-                            tremendously) for higher-tier plans. Read the small print to make sure the plan you are
-                            selecting offers
-                            what you need. If you need a site builder application to design your website, make sure that
-                            the
-                            low-cost web host you are picking actually comes with a site builder. Many of them require
-                            you
-                            to pay
-                            for the builder as a separate add-on. Website builders usually don't cost a lot of money,
-                            but if
-                            you can
-                            find a web host that includes one for free, that's money in your pocket. And, if it's
-                            integrated
-                            with
-                            your hosting service, you're more likely to have a smooth, supported experience.
+                            Many web hosts offer limited features in their starter packages
+                            and then expand the offerings (sometimes tremendously) for
+                            higher-tier plans. Read the small print to make sure the plan
+                            you are selecting offers what you need. If you need a site
+                            builder application to design your website, make sure that the
+                            low-cost web host you are picking actually comes with a site
+                            builder. Many of them require you to pay for the builder as a
+                            separate add-on. Website builders usually don't cost a lot of
+                            money, but if you can find a web host that includes one for
+                            free, that's money in your pocket. And, if it's integrated with
+                            your hosting service, you're more likely to have a smooth,
+                            supported experience.
                         </p>
                     </div>
                     <div class="py-3">
                         <h3 class="font-bold text-2xl">Email Hosting</h3>
                         <p class="text-xl text-slate-700">
-                            If you aim to have a web presence, you must have email. It's a convenient way for potential
-                            customers
-                            and clients to send you a message, Word document, or other files. Thankfully, most web hosts
-                            include
-                            email in their hosting plans. Some web hosts offer unlimited email account creation (which
-                            is
-                            great for
-                            future growth), while others offer a finite amount. You, naturally, should want unlimited
-                            email.
+                            If you aim to have a web presence, you must have email. It's a
+                            convenient way for potential customers and clients to send you a
+                            message, Word document, or other files. Thankfully, most web
+                            hosts include email in their hosting plans. Some web hosts offer
+                            unlimited email account creation (which is great for future
+                            growth), while others offer a finite amount. You, naturally,
+                            should want unlimited email.
                         </p>
                         <p class="text-xl text-slate-700 mt-4">
-                            That said, not all web hosts offer email. WP Engine, for example, does not. In such
-                            instances,
-                            you must
-                            sign up for email accounts from a company other than your web host. GoDaddy, for instance,
-                            sells
-                            email
-                            packages starting at $5.99 per user, per month. That might sound like a hassle, and just one
-                            more thing
-                            to keep track of, but there are actually some webmasters who feel that separating your email
-                            hosting and
-                            web hosting services is smart. That way, one provider going offline won't completely bork
-                            your
-                            business.
+                            That said, not all web hosts offer email. WP Engine, for
+                            example, does not. In such instances, you must sign up for email
+                            accounts from a company other than your web host. GoDaddy, for
+                            instance, sells email packages starting at $5.99 per user, per
+                            month. That might sound like a hassle, and just one more thing
+                            to keep track of, but there are actually some webmasters who
+                            feel that separating your email hosting and web hosting services
+                            is smart. That way, one provider going offline won't completely
+                            bork your business.
                         </p>
                     </div>
                     <div class="py-3">
                         <h3 class="font-bold text-2xl">Uptime, Uptime, Uptime!</h3>
                         <p class="text-xl text-slate-700">
-                            The aforementioned features are valuable to the web hosting experience, but none matches the
-                            importance
-                            of site uptime. If your site is down, clients or customers will be unable to find you or
-                            access
-                            your
-                            products or services.
+                            The aforementioned features are valuable to the web hosting
+                            experience, but none matches the importance of site uptime. If
+                            your site is down, clients or customers will be unable to find
+                            you or access your products or services.
                         </p>
                         <p class="text-xl text-slate-700 mt-4">
-                            We've added uptime monitoring to our review process, and the results show that most web
-                            hosts do
-                            an
-                            excellent job of keeping sites up and running. Web hosts with uptime issues are heavily
-                            penalized during
-                            the review process and are unable to qualify for top ratings.
-                            See How We Test Web Hosting Services.
+                            We've added uptime monitoring to our review process, and the
+                            results show that most web hosts do an excellent job of keeping
+                            sites up and running. Web hosts with uptime issues are heavily
+                            penalized during the review process and are unable to qualify
+                            for top ratings. See How We Test Web Hosting Services.
                         </p>
                     </div>
                     <div class="py-3">
                         <h3 class="font-bold text-2xl">Ecommerce and Marketing</h3>
                         <p class="text-xl text-slate-700">
-                            One thing we learned in reviewing the services listed here (and many more) is that even
-                            though
-                            the
-                            packages are similar, they are not identical. Some are more security-focused than others,
-                            offering
-                            anti-spam and anti-malware tools at every price tier. Others offer a variety of email
-                            marketing
-                            tools.
-                            While most of the hosts we've reviewed have built-in e-commerce, you may want to consider
-                            using
-                            a
-                            more-robust third-party online shopping cart application, such as PinnacleCart, Shopify, or
-                            Wix
-                            Stores.
+                            One thing we learned in reviewing the services listed here (and
+                            many more) is that even though the packages are similar, they
+                            are not identical. Some are more security-focused than others,
+                            offering anti-spam and anti-malware tools at every price tier.
+                            Others offer a variety of email marketing tools. While most of
+                            the hosts we've reviewed have built-in e-commerce, you may want
+                            to consider using a more-robust third-party online shopping cart
+                            application, such as PinnacleCart, Shopify, or Wix Stores.
                         </p>
                     </div>
                 </div>
@@ -1592,7 +1626,9 @@
         <div class="container mx-auto text-white px-4">
             <div class="grid grid-cols-12">
                 <div class="col-span-12 md:col-span-6 flex items-center justify-center md:justify-start">
-                    <h2 class="capitalize text-4.5xl text-center sm:text-start">Company Tagline</h2>
+                    <h2 class="capitalize text-4.5xl text-center sm:text-start">
+                        Company Tagline
+                    </h2>
                 </div>
                 <!-- svg social -->
                 <div class="col-span-12 md:col-span-6 flex items-center justify-center md:ps-44 mt-6 md:mt-0">
@@ -1663,7 +1699,7 @@
                 <div class="col-span-12 md:col-span-6 lg:col-span-3 pt-14 text-center md:text-start">
                     <h4 class="text-xl uppercase font-extrabold mb-6">Subscribe now</h4>
                     <input type="email" name="" id="" placeholder="E-Mail Address"
-                        class="ps-4 py-4 pe-10 rounded-lg"><br>
+                        class="ps-4 py-4 pe-10 rounded-lg" /><br />
                     <button class="btn-dark py-3 px-14 mt-4">send</button>
                 </div>
             </div>
